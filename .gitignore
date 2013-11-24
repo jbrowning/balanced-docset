@@ -1,0 +1,8 @@
+.DS_Store
+.LSOverride
+.idea/
+*.sublime-workspace
+*.sublime-project
+.ruby-version
+.ruby-gemset
+tmp
