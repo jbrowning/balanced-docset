@@ -2,7 +2,7 @@ ROOT_DIR = File.dirname(__FILE__)
 $:.unshift ROOT_DIR
 
 require "rake"
-require "lib/doc_gen"
+require "lib/assembler"
 
 task :default => "generate"
 
