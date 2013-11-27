@@ -7,7 +7,7 @@ require "lib/doc_gen"
 task :default => "generate"
 
 desc "Generate the BalancedPayments docset"
-task generate: ["generate:copy"]
+task generate: ["generate:copy", "generate:prune"]
 
 namespace :generate do
   task :init do
@@ -19,6 +19,11 @@ namespace :generate do
 
   desc "Copy the raw Balanced documentation"
   task copy: :init do
-    Assembler::Copier.run
+    Assembler::Copier.perform
+  end
+
+  desc "Prune the docs"
+  task prune: :init do
+    Assembler::Pruner.perform
   end
 end
