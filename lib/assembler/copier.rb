@@ -2,32 +2,29 @@ require 'nokogiri'
 require 'fileutils'
 
 module Assembler
-  class Doc
+  class Copier
     def self.run
       new.tap { |instance| instance.run }
     end
 
-    attr_reader :html_filenames
-
-    def initialize
-      @html_filenames = []
-    end
-
     def run
-      discover_docs
       clean_dest
       copy_docs
-      # layout_docs
+      layout_docs
+      sweep_old_docs
     end
 
-    def discover_docs
+    def html_filenames
+      return @html_filenames if defined? @html_filenames
+      @html_filenames = []
       Dir.new(PathHelper.source.site).each do |filename|
-        html_filenames << filename if /-gen\.html/.match(filename)
+        @html_filenames << filename if /-gen\.html/.match(filename)
       end
+      @html_filenames
     end
 
     def clean_dest
-      puts "Cleaning up destination directory: #{Dir.glob(File.join(PathHelper.dest.documents, "*"))}"
+      puts "Cleaning up destination directory..."
       FileUtils.rm_rf Dir.glob(File.join(PathHelper.dest.documents, "*"))
     end
 
@@ -45,11 +42,14 @@ module Assembler
     end
 
     def layout_docs
+      puts "Wrapping docs in layout..."
       layout_path = File.join(File.dirname(__FILE__), "layout.html")
-      layout_doc_file = File.open(layout_path)
+      layout_doc_file = File.open(layout_path, "r")
       layout_doc = Nokogiri::HTML(layout_doc_file)
 
-      files_to_layout = html_filenames.map { |filename| File.join(dest_path, filename) }
+      files_to_layout = html_filenames.map { |filename|
+        File.join(PathHelper.dest.documents, filename)
+      }
 
       files_to_layout.each do |filename|
         File.open(filename, "r") do |f|
@@ -65,6 +65,17 @@ module Assembler
       end
 
       layout_doc_file.close
+    end
+
+    def sweep_old_docs
+      puts "Deleting old docs..."
+      files_to_delete = html_filenames.map { |filename|
+        File.join(PathHelper.dest.documents, filename)
+      }
+
+      files_to_delete.each do |filename|
+        FileUtils.rm filename
+      end
     end
   end
 end

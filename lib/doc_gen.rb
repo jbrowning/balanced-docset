@@ -1,3 +1,3 @@
 require 'bundler/setup'
 require "lib/path_helper"
-require 'lib/assembler/doc'
+require 'lib/assembler/copier'
