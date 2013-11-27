@@ -3,15 +3,13 @@ require 'fileutils'
 
 module Assembler
   class Doc
-    def self.run(source_path, dest_path)
-      new(source_path, dest_path).tap { |instance| instance.run }
+    def self.run
+      new.tap { |instance| instance.run }
     end
 
-    attr_reader :source_path, :dest_path, :html_filenames
+    attr_reader :html_filenames
 
-    def initialize(source_path, dest_path)
-      @source_path    = source_path
-      @dest_path      = dest_path
+    def initialize
       @html_filenames = []
     end
 
@@ -19,31 +17,31 @@ module Assembler
       discover_docs
       clean_dest
       copy_docs
-      layout_docs
+      # layout_docs
     end
 
     def discover_docs
-      source_path.each do |filename|
+      Dir.new(PathHelper.source.site).each do |filename|
         html_filenames << filename if /-gen\.html/.match(filename)
       end
+    end
+
+    def clean_dest
+      puts "Cleaning up destination directory: #{Dir.glob(File.join(PathHelper.dest.documents, "*"))}"
+      FileUtils.rm_rf Dir.glob(File.join(PathHelper.dest.documents, "*"))
     end
 
     def copy_docs
       puts "Copying source docs to docset..."
 
       static_files = [
-        File.join(source_path, "static")
+        File.join(PathHelper.source.static)
       ]
-      html_files = html_filenames.map { |filename| File.join(source_path, filename) }
+      html_files = html_filenames.map { |filename| File.join(PathHelper.source.site, filename) }
 
       to_copy = static_files + html_files
 
-      FileUtils.cp_r(to_copy, dest_path)
-    end
-
-    def clean_dest
-      puts "Cleaning up destination directory..."
-      FileUtils.rm_rf Dir.glob(File.join(dest_path, "*"))
+      FileUtils.cp_r(to_copy, PathHelper.dest.documents)
     end
 
     def layout_docs
