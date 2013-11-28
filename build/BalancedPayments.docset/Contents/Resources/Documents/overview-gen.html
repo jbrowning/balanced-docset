@@ -1,137 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<div>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta charset="utf-8">
 <title>Balanced</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="static/css/styles.css" rel="stylesheet">
 <link href="static/css/pygments.css" rel="stylesheet">
-</head>
-<body>
-  <div id="content">
-
-<div class="container content" id="overview-content">
+<div id="content"><div class="container content" id="overview-content">
     <div class="row">
 
         <!-- The side bar menu -->
-        <div class="span5 context-sidebar">
-            <div class="sidebar-nav" data-spy="affix">
-                <div class="row">
-                    <div class="span5">
-
-                        <!-- The navigation menu -->
-                        <div class="overview-api">
-                          <ul class="simple" id="context-selector">
-<li class="active">
-                                <a href="overview.html">Overview</a>
-                            </li>
-                            <li>
-                                <a href="api.html">API Reference</a>
-                            </li>
-                            <li>
-                                <a href="https://support.balancedpayments.com/hc/en-us">FAQs</a>
-                            </li>
-                          </ul>
-</div>
-
-                        <!-- The table of contents menu -->
-                        <ul class="nav nav-list context-navlist">
-<li class="toctree-l1">Overview<ul>
-<li class="toctree-l2"><a class="reference internal" href="#client-libraries">Client Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#github-discussions">Github Discussions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#support">Support</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#certified-developers">Certified Developers</a></li>
-</ul>
-</li>
-<li class="toctree-l1">Getting Started<ul>
-<li class="toctree-l2"><a class="reference internal" href="#obtain-a-test-marketplace">Obtain a Test Marketplace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#obtain-a-production-marketplace">Obtain a Production Marketplace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#balanced-js">Balanced.js</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#collecting-credit-card-information">Collecting credit card information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#charge-a-credit-card">Charge a credit card</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#collect-bank-account-info">Collect bank account info</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#credit-a-bank-account">Credit a bank account</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#balanced-js-card-reference">Balanced.js Card Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#balanced-js-bankaccount-reference">Balanced.js BankAccount Reference</a></li>
-</ul>
-</li>
-<li class="toctree-l1">Best Practices<ul>
-<li class="toctree-l2"><a class="reference internal" href="#going-live-checklist">Going Live Checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#use-balanced-js">Use balanced.js</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#soft-descriptors">Soft Descriptors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reducing-declined-transactions">Reducing Declined Transactions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#catching-fraud-early">Catching Fraud Early</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reducing-payout-delays">Reducing Payout Delays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#use-meta">Use Meta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#implementation-patterns">Implementation Patterns</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#store-uris">Store URIs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-help">Getting Help</a></li>
-</ul>
-</li>
-<li class="toctree-l1">Processing<ul>
-<li class="toctree-l2"><a class="reference internal" href="#debits">Debits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#refunds">Refunds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#holds">Holds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#transaction-limits">Transaction Limits</a></li>
-</ul>
-</li>
-<li class="toctree-l1">Balanced Payouts<ul>
-<li class="toctree-l2"><a class="reference internal" href="#credits">Credits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#credit-s-status-field">Credit's Status Field</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#payout-methods">Payout Methods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#canceling-credits">Canceling Credits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pre-funding-your-account">Pre-funding Your Account</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#submission-delivery-times">Submission &amp; Delivery times</a></li>
-</ul>
-</li>
-<li class="toctree-l1">Pricing and fees<ul>
-<li class="toctree-l2"><a class="reference internal" href="#payout-pricing">Payout Pricing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#processing-pricing">Processing Pricing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#invoicing-fees">Invoicing fees</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#funds-flow">Funds Flow</a></li>
-</ul>
-</li>
-<li class="toctree-l1">Resources<ul>
-<li class="toctree-l2"><a class="reference internal" href="#test-credit-card-numbers">Test credit card numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#test-bank-account-numbers">Test bank account numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#test-identity-verification">Test identity verification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#request-logs">Request Logs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-hash-attribute">The Hash Attribute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#address-verification-service">Address Verification Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#card-security-code">Card Security Code</a></li>
-</ul>
-</li>
-</ul>
-</div>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- The actual overview content -->
         <div id="context-content" class="span20 offset1">
             
   <div class="toctree-wrapper compound">
-<span id="document-introduction"></span><section id="overview"><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">∵</a>
+<span id="document-introduction"></span><section id="overview"><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a>
 </h1>
 <div class="overview-large">
 <p>Balanced is a payments company dedicated to increasing the world's
 economic output. To do this, we've decided to work with online
 marketplaces and crowdfunding platforms to help them create new forms of commerce.
-We’ve built a white-labeled API and open sourced dashboard to help them
+We&acirc;&#128;&#153;ve built a white-labeled API and open sourced dashboard to help them
 do this. And while we really like working with marketplaces and
 crowdfunding platforms, Balanced can be used for e-commerce models of all types.</p>
-<p>We’ve been processing live transactions since October, 2010 and have a
+<p>We&acirc;&#128;&#153;ve been processing live transactions since October, 2010 and have a
 history of working closely with our customers to solve their problems,
 specifically those related to multi-party transactions. For example,
-we’re in an <a class="reference external" href="http://blog.gittip.com/post/28351995405/open-partnerships">open partnership</a> with <a class="reference external" href="http://gittip.com">Gittip</a> after volunteering code
+we&acirc;&#128;&#153;re in an <a class="reference external" href="http://blog.gittip.com/post/28351995405/open-partnerships">open partnership</a> with <a class="reference external" href="http://gittip.com">Gittip</a> after volunteering code
 and expertise to help them <a class="reference external" href="https://github.com/gittip/www.gittip.com/issues/67">mitigate the risks of running a
-marketplace</a>. To date, Balanced has contributed to Gittip’s <a class="reference external" href="https://github.com/gittip/www.gittip.com/pull/137">payments
+marketplace</a>. To date, Balanced has contributed to Gittip&acirc;&#128;&#153;s <a class="reference external" href="https://github.com/gittip/www.gittip.com/pull/137">payments
 infrastructure</a>, <a class="reference external" href="https://github.com/gittip/www.gittip.com/issues/66#issuecomment-7439689">visual design</a>, and <a class="reference external" href="https://github.com/gvenkataraman/www.gittip.com/commit/ceb88e6f5e1eb7ae931cf2921866beccb49381b5">fraud preventions systems</a>.</p>
 <p>Balanced believes in openness and transparency, so, despite being a
 payments company, we try to discuss as much of our product development
-decisions in public as possible. We’ve even <a class="reference external" href="https://github.com/balanced/balanced-api/issues/48">discussed pricing
+decisions in public as possible. We&acirc;&#128;&#153;ve even <a class="reference external" href="https://github.com/balanced/balanced-api/issues/48">discussed pricing
 decisions</a> publicly with our customers.</p>
 </div>
 <div class="integration">
@@ -185,7 +88,7 @@ Testing</div>
 <div class="clear">
 </div>
 <hr>
-<section id="client-libraries"><span id="overview-use-cases"></span><h2>Client Libraries<a class="headerlink" href="#client-libraries" title="Permalink to this headline">∵</a>
+<section id="client-libraries"><span id="overview-use-cases"></span><h2>Client Libraries<a class="headerlink" href="#client-libraries" title="Permalink to this headline"></a>
 </h2>
 <p>Balanced attempts very hard to write idiomatic code for all it's API libraries
 and we pride ourselves in an extensive test suite for every client that
@@ -252,7 +155,7 @@ many <a class="reference internal" href="overview.html#overview-support"><em>sup
 </tr>
 </tbody>
 </table></section><hr>
-<section id="use-cases"><h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">∵</a>
+<section id="use-cases"><h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline"></a>
 </h2>
 <div class="header3 mb-ten">
 Marketplaces</div>
@@ -260,7 +163,7 @@ Marketplaces</div>
 marketplaces -- any platform facilitating payments between buyers and
 sellers. For example, <a class="reference external" href="http://kitchit.com">kitchit</a>, <a class="reference external" href="http://copious.com">copious</a>, <a class="reference external" href="http://zaarly.com">zaarly</a>, <a class="reference external" href="http://visual.ly">visual.ly</a>,
 and many others are connecting Balanced Processing and Balanced Payouts
-to charge a buyer’s credit card on behalf of a seller.</p>
+to charge a buyer&acirc;&#128;&#153;s credit card on behalf of a seller.</p>
 <p>Some customers have even implemented a shopping cart checkout flow where
 a single buyer can buy from many sellers with a single transaction. And
 holding the funds with Balanced between Payouts and Processing can allow
@@ -270,7 +173,7 @@ Crowd-Funding</div>
 <p>Balanced is commonly used to power payments for crowd-funding and group
 purchasing platforms. For example, <a class="reference external" href="http://crowdtilt.com">crowdtilt</a>, <a class="reference external" href="http://wanderable.com">wanderable</a>,
 <a class="reference external" href="http://gittip.com">gittip</a>, and many others are connecting Balanced Processing and
-Balanced Payouts to charge many buyers’ credit cards on behalf of a
+Balanced Payouts to charge many buyers&acirc;&#128;&#153; credit cards on behalf of a
 single seller.</p>
 <div class="header3 mb-ten">
 Vendor Payments</div>
@@ -281,12 +184,12 @@ E-Commerce</div>
 <p>Balanced Processing is used by a merchants to simply charge buyers for
 items they sell directly.</p>
 </section><hr>
-<section id="github-discussions"><span id="overview-github-issues"></span><h2>Github Discussions<a class="headerlink" href="#github-discussions" title="Permalink to this headline">∵</a>
+<section id="github-discussions"><span id="overview-github-issues"></span><h2>Github Discussions<a class="headerlink" href="#github-discussions" title="Permalink to this headline"></a>
 </h2>
 <p>We actively and publicly discuss feature requests and product decisions
-with our community on <a class="reference external" href="https://github.com/balanced/balanced-api/issues">github</a>. We’d love to hear from you.</p>
+with our community on <a class="reference external" href="https://github.com/balanced/balanced-api/issues">github</a>. We&acirc;&#128;&#153;d love to hear from you.</p>
 </section><hr>
-<section id="support"><span id="overview-support"></span><h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">∵</a>
+<section id="support"><span id="overview-support"></span><h2>Support<a class="headerlink" href="#support" title="Permalink to this headline"></a>
 </h2>
 <p>We respond to support requests and questions through several channels
 including:</p>
@@ -301,11 +204,11 @@ including:</p>
 </li>
 </ul>
 <p>Follow <a class="reference external" href="https://twitter.com/balancedstatus">@balancedstatus</a> or check out <a class="reference external" href="https://status.balancedpayments.com/">status.balancedpayments.com</a>
-for real-time status updates on the API, balanced.js, and Balanced’s
+for real-time status updates on the API, balanced.js, and Balanced&acirc;&#128;&#153;s
 dashboard.</p>
 <p>Join the Balanced <a class="reference external" href="https://www.balancedpayments.com/community">community</a> and follow us on <a class="reference external" href="https://twitter.com/balanced">Twitter</a>.</p>
 </section><hr>
-<section id="certified-developers"><h2>Certified Developers<a class="headerlink" href="#certified-developers" title="Permalink to this headline">∵</a>
+<section id="certified-developers"><h2>Certified Developers<a class="headerlink" href="#certified-developers" title="Permalink to this headline"></a>
 </h2>
 <p>We've partnered with <a class="reference external" href="https://apixchange.com/">APIXchange</a> -- a marketplace for custom API development
 projects -- to help companies looking for assistance with their Balanced API
@@ -315,10 +218,10 @@ integration find a quality Balanced certified developer.</p>
 <p>If you'd like to find a developer to help with your Balanced integration
 outside of APIXchange, please post your criteria on <a class="reference external" href="https://github.com/balanced/balanced-api/issues/315">this Github issue</a>.</p>
 </section></section><hr>
-<span id="document-getting_started"></span><section id="getting-started"><span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">∵</a>
+<span id="document-getting_started"></span><section id="getting-started"><span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a>
 </h1>
 <hr>
-<section id="obtain-a-test-marketplace"><span id="getting-started-obtain-test-marketplace"></span><h2>Obtain a Test Marketplace<a class="headerlink" href="#obtain-a-test-marketplace" title="Permalink to this headline">∵</a>
+<section id="obtain-a-test-marketplace"><span id="getting-started-obtain-test-marketplace"></span><h2>Obtain a Test Marketplace<a class="headerlink" href="#obtain-a-test-marketplace" title="Permalink to this headline"></a>
 </h2>
 <p>Visit <a class="reference external" href="https://www.balancedpayments.com">https://www.balancedpayments.com</a> and click the try it out button. This
 creates a new test marketplace for immediate use.</p>
@@ -331,7 +234,7 @@ Be sure to claim your account by clicking the user icon in the top right corner 
 the dashboard and selecting "Claim account". Enter your email address and a
 password to permanently claim that dashboard as your own.</div>
 </section><hr>
-<section id="obtain-a-production-marketplace"><span id="getting-started-obtain-prod-marketplace"></span><h2>Obtain a Production Marketplace<a class="headerlink" href="#obtain-a-production-marketplace" title="Permalink to this headline">∵</a>
+<section id="obtain-a-production-marketplace"><span id="getting-started-obtain-prod-marketplace"></span><h2>Obtain a Production Marketplace<a class="headerlink" href="#obtain-a-production-marketplace" title="Permalink to this headline"></a>
 </h2>
 <p>To obtain a production marketplace:</p>
 <ul class="simple">
@@ -365,7 +268,7 @@ note</div>
 Don't forget to update your application to use your production API key and
 production marketplace URI before you begin transacting in your production marketplace.</div>
 </section><hr>
-<section id="balanced-js"><h2>Balanced.js<a class="headerlink" href="#balanced-js" title="Permalink to this headline">∵</a>
+<section id="balanced-js"><h2>Balanced.js<a class="headerlink" href="#balanced-js" title="Permalink to this headline"></a>
 </h2>
 <p><span class="docutils literal"><code>balanced.js</code></span> is essential in ensuring that you're PCI compliant. Sensitive
 data never touches your servers and as a result, the burden of PCI compliance
@@ -381,7 +284,7 @@ the sensitive information</li>
 </div>
 <p>We're putting this here as we're going to reference it in the <a class="reference internal" href="overview.html#payouts"><em>Balanced Payouts</em></a>
 and the <a class="reference internal" href="overview.html#processing"><em>Processing</em></a> tutorials.</p>
-<section id="including-and-initializing-balanced-js"><h3>Including and Initializing <span class="docutils literal"><code>balanced.js</code></span><a class="headerlink" href="#including-and-initializing-balanced-js" title="Permalink to this headline">∵</a>
+<section id="including-and-initializing-balanced-js"><h3>Including and Initializing <span class="docutils literal"><code>balanced.js</code></span><a class="headerlink" href="#including-and-initializing-balanced-js" title="Permalink to this headline"></a>
 </h3>
 <div class="alert alert-tab admonition note">
 note</div>
@@ -419,7 +322,7 @@ OK to freely share this with anyone.</p>
 <a class="reference external" href="https://dashboard.balancedpayments.com/">dashboard</a>.</p>
 </div>
 </section></section><hr>
-<section id="collecting-credit-card-information"><span id="getting-started-collecting-card-info"></span><h2>Collecting credit card information<a class="headerlink" href="#collecting-credit-card-information" title="Permalink to this headline">∵</a>
+<section id="collecting-credit-card-information"><span id="getting-started-collecting-card-info"></span><h2>Collecting credit card information<a class="headerlink" href="#collecting-credit-card-information" title="Permalink to this headline"></a>
 </h2>
 <div class="mb-large">
 <div class="header3">
@@ -560,7 +463,7 @@ proper callback handler:</p>
 <div class="clear">
 </div>
 </section><hr>
-<section id="charge-a-credit-card"><span id="getting-started-charging-cards"></span><h2>Charge a credit card<a class="headerlink" href="#charge-a-credit-card" title="Permalink to this headline">∵</a>
+<section id="charge-a-credit-card"><span id="getting-started-charging-cards"></span><h2>Charge a credit card<a class="headerlink" href="#charge-a-credit-card" title="Permalink to this headline"></a>
 </h2>
 <p>Ok, so you've got the card token, referred to as the <span class="docutils literal"><code>uri</code></span> of the returned Card
 resource.</p>
@@ -570,20 +473,8 @@ resource.</p>
 <p class="first">First, let's create a customer to which we can associate a card:</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/customers <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -X POST
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">customer</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Customer</span><span class="p">()</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD'</span><span class="p">)</span>
@@ -591,59 +482,16 @@ resource.</p>
 <span class="n">customer</span> <span class="o">=</span> <span class="no">Balanced</span><span class="o">::</span><span class="no">Customer</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">save</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$customer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Balanced\Customer</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
-  <span class="s2">"name"</span> <span class="o">=&gt;</span> <span class="s2">"William Henry Cavendish III"</span><span class="p">,</span>
-  <span class="s2">"email"</span> <span class="o">=&gt;</span> <span class="s2">"william@example.com"</span><span class="p">,</span>
-<span class="p">));</span>
-<span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"name"</span><span class="o">,</span> <span class="s">"William Henry Cavendish III"</span><span class="o">);</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"email"</span><span class="o">,</span> <span class="s">"william@example.com"</span><span class="o">);</span>
-
-<span class="n">Customer</span> <span class="n">customer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-<span class="n">customer</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-</pre></div>
-</div>
 </div>
 </li>
 <li>
 <p class="first">Associate the token with the customer:</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/customers/CU54t0pwxWKa0m9KfN3Dx79m <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -X PUT <span class="se">\</span>
-     -d <span class="s2">"card_uri=/v1/marketplaces/TEST-MP2oRTf6eEiGrBkS3ahqYdHN/cards/CC56GyX92EyTfeLzGdNFQBFk"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">customer</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'/v1/customers/CU3yqhHviPZ4ZbpHMcaa3SKH'</span><span class="p">)</span>
-<span class="n">customer</span><span class="o">.</span><span class="n">add_card</span><span class="p">(</span><span class="s">'/v1/marketplaces/TEST-MP52IlCmywk6hGbgS75QSlN/cards/CC3AiMy0KEP1PhwnffMk32RF'</span><span class="p">)</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD'</span><span class="p">)</span>
@@ -652,53 +500,16 @@ resource.</p>
 <span class="n">response</span> <span class="o">=</span> <span class="n">customer</span><span class="o">.</span><span class="n">add_card</span><span class="p">(</span><span class="s1">'/v1/marketplaces/TEST-MP4K6K0PWGyPtXL4LZ42sQSb/cards/CC7iFRCb5AvLuZ9qzIF0VMmA'</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$customer</span> <span class="o">=</span> <span class="nx">\Balanced\Customer</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s2">"/v1/customers/CU70CIWA2NrZwwMQqjBuWFUb"</span><span class="p">);</span>
-<span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">addCard</span><span class="p">(</span><span class="s2">"/v1/marketplaces/TEST-MP4K6K0PWGyPtXL4LZ42sQSb/cards/CC72hXVwWbCJsozvJoRELzIc"</span><span class="p">);</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Customer</span> <span class="n">customer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">(</span><span class="s">"/v1/customers/CU12eUdTk8OgEj7VbJVFeP0q"</span><span class="o">);</span>
-<span class="n">customer</span><span class="o">.</span><span class="na">addCard</span><span class="o">(</span><span class="s">"/v1/marketplaces/TEST-MP5FKPQwyjvVgTDt7EiRw3Kq/cards/CC15RAm6JJIEIae6bicvlWRw"</span><span class="o">);</span>
-</pre></div>
-</div>
 </div>
 </li>
 <li>
 <p class="first">Debit the customer:</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/customers/CU5ntwSmUauw7xww7A2AyMzM/debits <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"appears_on_statement_as=Statement text"</span> <span class="se">\</span>
-     -d <span class="s2">"amount=5000"</span> <span class="se">\</span>
-     -d <span class="s2">"description=Some descriptive text for the debit in the dashboard"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">customer</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'/v1/customers/CU2dUh4jpUihIQsHFbTwuDAc'</span><span class="p">)</span>
-<span class="n">customer</span><span class="o">.</span><span class="n">debit</span><span class="p">(</span><span class="n">amount</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD'</span><span class="p">)</span>
@@ -707,35 +518,8 @@ resource.</p>
 <span class="n">customer</span><span class="o">.</span><span class="n">debit</span><span class="p">(</span><span class="ss">:amount</span> <span class="o">=&gt;</span> <span class="mi">5000</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$customer</span> <span class="o">=</span> <span class="nx">\Balanced\Customer</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s2">"/v1/customers/CU6vs1tjxBtifgTuzKjCGtVS"</span><span class="p">);</span>
-<span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">debit</span><span class="p">(</span><span class="s1">'5000'</span><span class="p">);</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Customer</span> <span class="n">customer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">(</span><span class="s">"/v1/customers/CU7wGDVh8FjYMPfkPl9SzWAu"</span><span class="o">);</span>
-<span class="n">customer</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"amount"</span><span class="o">,</span> <span class="mi">5000</span><span class="o">);</span>
-
-<span class="n">customer</span><span class="o">.</span><span class="na">debit</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-</pre></div>
-</div>
 </div>
 </li>
 </ol>
@@ -748,7 +532,7 @@ Balanced does NOT take its fees from your charges, instead it instruments
 all operations that have occurred on the API and later invoices you. Read
 <a class="reference internal" href="overview.html#invoicing-fees"><em>more about fees</em></a>.</div>
 </section><hr>
-<section id="collect-bank-account-info"><span id="getting-started-collecting-bank-info"></span><h2>Collect bank account info<a class="headerlink" href="#collect-bank-account-info" title="Permalink to this headline">∵</a>
+<section id="collect-bank-account-info"><span id="getting-started-collecting-bank-info"></span><h2>Collect bank account info<a class="headerlink" href="#collect-bank-account-info" title="Permalink to this headline"></a>
 </h2>
 <div class="mb-large">
 <div class="header3">
@@ -888,7 +672,7 @@ proper callback handler:</p>
 </div>
 </li>
 </ol></section><hr>
-<section id="credit-a-bank-account"><span id="getting-started-credit-bank-account"></span><h2>Credit a bank account<a class="headerlink" href="#credit-a-bank-account" title="Permalink to this headline">∵</a>
+<section id="credit-a-bank-account"><span id="getting-started-credit-bank-account"></span><h2>Credit a bank account<a class="headerlink" href="#credit-a-bank-account" title="Permalink to this headline"></a>
 </h2>
 <p>After collecting the bank account information via balanced.js, you'll have
 the bank account token, referred to as the <span class="docutils literal"><code>uri</code></span> of the returned BankAccount
@@ -899,20 +683,8 @@ resource.</p>
 <p class="first">First, create a customer to which the bank account can be associated:</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/customers <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -X POST
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">customer</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Customer</span><span class="p">()</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD'</span><span class="p">)</span>
@@ -920,59 +692,16 @@ resource.</p>
 <span class="n">customer</span> <span class="o">=</span> <span class="no">Balanced</span><span class="o">::</span><span class="no">Customer</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">save</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$customer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Balanced\Customer</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
-  <span class="s2">"name"</span> <span class="o">=&gt;</span> <span class="s2">"William Henry Cavendish III"</span><span class="p">,</span>
-  <span class="s2">"email"</span> <span class="o">=&gt;</span> <span class="s2">"william@example.com"</span><span class="p">,</span>
-<span class="p">));</span>
-<span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"name"</span><span class="o">,</span> <span class="s">"William Henry Cavendish III"</span><span class="o">);</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"email"</span><span class="o">,</span> <span class="s">"william@example.com"</span><span class="o">);</span>
-
-<span class="n">Customer</span> <span class="n">customer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-<span class="n">customer</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-</pre></div>
-</div>
 </div>
 </li>
 <li>
 <p class="first">Associate the token with the customer:</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/customers/CU5bC3IrV5DOGGd5PXzurT1C <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -X PUT <span class="se">\</span>
-     -d <span class="s2">"bank_account_uri=/v1/bank_accounts/BA5e0lSskz5Z8IWROdJHzKQu"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">customer</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'/v1/customers/CU22xHvLbgGKfzamLW8IZJsr'</span><span class="p">)</span>
-<span class="n">customer</span><span class="o">.</span><span class="n">add_bank_account</span><span class="p">(</span><span class="s">'/v1/bank_accounts/BA24Zc2jo1moflunJDxKrCrB'</span><span class="p">)</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD'</span><span class="p">)</span>
@@ -981,84 +710,23 @@ resource.</p>
 <span class="n">customer</span><span class="o">.</span><span class="n">add_bank_account</span><span class="p">(</span><span class="s2">"/v1/bank_accounts/BA6oxYWJXxeM63vMorgtSIhI"</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$customer</span> <span class="o">=</span> <span class="nx">\Balanced\Customer</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s2">"/v1/customers/CU6n0viWQoT86ttbkCsPgV0Y"</span><span class="p">);</span>
-<span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">addBankAccount</span><span class="p">(</span><span class="s2">"/v1/bank_accounts/BA6oxYWJXxeM63vMorgtSIhI"</span><span class="p">);</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Customer</span> <span class="n">customer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">(</span><span class="s">"/v1/customers/CU7o5OSA8KuFSSjweE54NITe"</span><span class="o">);</span>
-<span class="n">customer</span><span class="o">.</span><span class="na">addBankAccount</span><span class="o">(</span><span class="s">"/v1/bank_accounts/BA7q1HxYvJr41fVUPk8vMrCm"</span><span class="o">);</span>
-</pre></div>
-</div>
 </div>
 </li>
 <li>
 <p class="first">Credit the customer:</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/customers/CU34nUOWZPonYNaQZFpN2E5M/credits <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"amount=100"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">customer</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'/v1/customers/CUyABeNYx8vHAaP4KRsd1j4/credits'</span><span class="p">)</span>
-<span class="n">customer</span><span class="o">.</span><span class="n">credit</span><span class="p">(</span><span class="n">amount</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="n">customer</span> <span class="o">=</span> <span class="no">Balanced</span><span class="o">::</span><span class="no">Customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'/v1/customers/CU5f64LhFMO8cf7N1sQSRVOo'</span><span class="p">)</span>
 <span class="n">customer</span><span class="o">.</span><span class="n">credit</span><span class="p">(</span><span class="ss">:amount</span> <span class="o">=&gt;</span> <span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$customer</span> <span class="o">=</span> <span class="nx">Balanced\Customer</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s2">"/v1/customers/CU5f64LhFMO8cf7N1sQSRVOo"</span><span class="p">);</span>
-<span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">credit</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Customer</span> <span class="n">customer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">(</span><span class="s">"/v1/customers/CU6bg92aGrSXuWUF6usdhBbw"</span><span class="o">);</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"amount"</span><span class="o">,</span> <span class="mi">100</span><span class="o">);</span>
-
-<span class="n">customer</span><span class="o">.</span><span class="na">credit</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-</pre></div>
-</div>
 </div>
 </li>
 </ol>
@@ -1076,11 +744,11 @@ note</div>
 Please note that for American Express cards it is mandatory to collect
 the zip-code or the transaction will fail.</div>
 </section><hr>
-<section id="balanced-js-card-reference"><span id="getting-started-balanced-js-cards"></span><h2>Balanced.js Card Reference<a class="headerlink" href="#balanced-js-card-reference" title="Permalink to this headline">∵</a>
+<section id="balanced-js-card-reference"><span id="getting-started-balanced-js-cards"></span><h2>Balanced.js Card Reference<a class="headerlink" href="#balanced-js-card-reference" title="Permalink to this headline"></a>
 </h2>
 <dl class="function">
 <dt id="balanced.card.create">
-<span class="descclassname">balanced.card.</span><span class="descname">create</span><big>(</big><em>cardDataObject</em>, <em>callback</em><big>)</big><a class="headerlink" href="#balanced.card.create" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.card.</span><span class="descname">create</span><big>(</big><em>cardDataObject</em>, <em>callback</em><big>)</big><a class="headerlink" href="#balanced.card.create" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Sends the data stored in the <span class="docutils literal"><code>cardDataObject</code></span> to Balanced's servers for
@@ -1121,7 +789,7 @@ its <span class="docutils literal"><code>uri</code></span></p>
 </dl>
 <dl class="function">
 <dt id="balanced.card.isCardNumberValid">
-<span class="descclassname">balanced.card.</span><span class="descname">isCardNumberValid</span><big>(</big><em>cardNumber</em><big>)</big><a class="headerlink" href="#balanced.card.isCardNumberValid" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.card.</span><span class="descname">isCardNumberValid</span><big>(</big><em>cardNumber</em><big>)</big><a class="headerlink" href="#balanced.card.isCardNumberValid" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Validates a card number by checking if it's formatted correctly and
@@ -1158,7 +826,7 @@ stripped for convenience.</p>
 </dl>
 <dl class="function">
 <dt id="balanced.card.cardType">
-<span class="descclassname">balanced.card.</span><span class="descname">cardType</span><big>(</big><em>cardNumber</em><big>)</big><a class="headerlink" href="#balanced.card.cardType" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.card.</span><span class="descname">cardType</span><big>(</big><em>cardNumber</em><big>)</big><a class="headerlink" href="#balanced.card.cardType" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Returns the card brand, calculated from the card number. If the card brand can
@@ -1194,7 +862,7 @@ NOT be determined, it will return <span class="docutils literal"><code>null</cod
 </dl>
 <dl class="function">
 <dt id="balanced.card.isSecurityCodeValid">
-<span class="descclassname">balanced.card.</span><span class="descname">isSecurityCodeValid</span><big>(</big><em>cardNumber</em>, <em>securityCode</em><big>)</big><a class="headerlink" href="#balanced.card.isSecurityCodeValid" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.card.</span><span class="descname">isSecurityCodeValid</span><big>(</big><em>cardNumber</em>, <em>securityCode</em><big>)</big><a class="headerlink" href="#balanced.card.isSecurityCodeValid" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Checks whether or not the supplied number could be a valid card security code
@@ -1230,7 +898,7 @@ for the supplied card number.</p>
 </dl>
 <dl class="function">
 <dt id="balanced.card.isExpiryValid">
-<span class="descclassname">balanced.card.</span><span class="descname">isExpiryValid</span><big>(</big><em>expirationMonth</em>, <em>expirationYear</em><big>)</big><a class="headerlink" href="#balanced.card.isExpiryValid" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.card.</span><span class="descname">isExpiryValid</span><big>(</big><em>expirationMonth</em>, <em>expirationYear</em><big>)</big><a class="headerlink" href="#balanced.card.isExpiryValid" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Returns true if <span class="docutils literal"><code>expirationMonth</code></span> and <span class="docutils literal"><code>expirationYear</code></span> correspond to
@@ -1266,7 +934,7 @@ a date in the future.</p>
 </dl>
 <dl class="function">
 <dt id="balanced.card.validate">
-<span class="descclassname">balanced.card.</span><span class="descname">validate</span><big>(</big><em>cardDataObject</em><big>)</big><a class="headerlink" href="#balanced.card.validate" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.card.</span><span class="descname">validate</span><big>(</big><em>cardDataObject</em><big>)</big><a class="headerlink" href="#balanced.card.validate" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Performs a suite of checks on the submitted credit card data and returns
@@ -1314,11 +982,11 @@ errors.</p>
 </div>
 </dd>
 </dl></section><hr>
-<section id="balanced-js-bankaccount-reference"><span id="getting-started-balanced-js-bank-accounts"></span><h2>Balanced.js BankAccount Reference<a class="headerlink" href="#balanced-js-bankaccount-reference" title="Permalink to this headline">∵</a>
+<section id="balanced-js-bankaccount-reference"><span id="getting-started-balanced-js-bank-accounts"></span><h2>Balanced.js BankAccount Reference<a class="headerlink" href="#balanced-js-bankaccount-reference" title="Permalink to this headline"></a>
 </h2>
 <dl class="function">
 <dt id="balanced.bankAccount.validateRoutingNumber">
-<span class="descclassname">balanced.bankAccount.</span><span class="descname">validateRoutingNumber</span><big>(</big><em>routingNumber</em><big>)</big><a class="headerlink" href="#balanced.bankAccount.validateRoutingNumber" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.bankAccount.</span><span class="descname">validateRoutingNumber</span><big>(</big><em>routingNumber</em><big>)</big><a class="headerlink" href="#balanced.bankAccount.validateRoutingNumber" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Validates a USA based bank routing number using the <a class="reference external" href="http://en.wikipedia.org/wiki/Routing_transit_number#MICR_Routing_number_format">MICR Routing Number Format</a>.</p>
@@ -1357,7 +1025,7 @@ routing number is valid, only that it falls within a valid range.</div>
 </dl>
 <dl class="function">
 <dt id="balanced.bankAccount.validate">
-<span class="descclassname">balanced.bankAccount.</span><span class="descname">validate</span><big>(</big><em>bankAccountDataObject</em><big>)</big><a class="headerlink" href="#balanced.bankAccount.validate" title="Permalink to this definition">∵</a>
+<span class="descclassname">balanced.bankAccount.</span><span class="descname">validate</span><big>(</big><em>bankAccountDataObject</em><big>)</big><a class="headerlink" href="#balanced.bankAccount.validate" title="Permalink to this definition"></a>
 </dt>
 <dd>
 <p>Performs a suite of checks on the submitted bank account data and
@@ -1402,10 +1070,10 @@ Account numbers can not be validated in real time. More on
 </div>
 </dd>
 </dl></section></section><hr>
-<span id="document-best_practices"></span><section id="best-practices"><span id="id1"></span><h1>Best Practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">∵</a>
+<span id="document-best_practices"></span><section id="best-practices"><span id="id1"></span><h1>Best Practices<a class="headerlink" href="#best-practices" title="Permalink to this headline"></a>
 </h1>
 <hr>
-<section id="going-live-checklist"><span id="best-practices-going-live-checklist"></span><h2>Going Live Checklist<a class="headerlink" href="#going-live-checklist" title="Permalink to this headline">∵</a>
+<section id="going-live-checklist"><span id="best-practices-going-live-checklist"></span><h2>Going Live Checklist<a class="headerlink" href="#going-live-checklist" title="Permalink to this headline"></a>
 </h2>
 <ul class="simple">
 <li>Ensure servers use SSL</li>
@@ -1423,7 +1091,7 @@ and <a class="reference external" href="https://www.balancedpayments.com/privacy
 <li>Change API key to production API key</li>
 <li>Change application marketplace URI to production marketplace URI</li>
 </ul></section><hr>
-<section id="use-balanced-js"><span id="id2"></span><h2>Use balanced.js<a class="headerlink" href="#use-balanced-js" title="Permalink to this headline">∵</a>
+<section id="use-balanced-js"><span id="id2"></span><h2>Use balanced.js<a class="headerlink" href="#use-balanced-js" title="Permalink to this headline"></a>
 </h2>
 <p>Use balanced.js to tokenize cards and bank accounts. balanced.js keeps your systems PCI compliant
 by sending sensitive information over SSL directly to the Balanced servers.</p>
@@ -1433,7 +1101,7 @@ note</div>
 This does not remove the need for you to use SSL on your servers as all financial transactions
 should occur over SSL.</div>
 </section><hr>
-<section id="soft-descriptors"><span id="best-practices-soft-descriptor"></span><h2>Soft Descriptors<a class="headerlink" href="#soft-descriptors" title="Permalink to this headline">∵</a>
+<section id="soft-descriptors"><span id="best-practices-soft-descriptor"></span><h2>Soft Descriptors<a class="headerlink" href="#soft-descriptors" title="Permalink to this headline"></a>
 </h2>
 <p>Set a soft descriptor for your transactions. Soft descriptors appear on customer's card and bank
 statements for every transaction performed.</p>
@@ -1456,7 +1124,7 @@ was performed.</p>
 <p>Setting the soft descriptor is achieved by setting <span class="docutils literal"><code>appears_on_statement_as</code></span> when performing
 a debit or a credit.</p>
 </section><hr>
-<section id="reducing-declined-transactions"><span id="best-practices-payouts"></span><h2>Reducing Declined Transactions<a class="headerlink" href="#reducing-declined-transactions" title="Permalink to this headline">∵</a>
+<section id="reducing-declined-transactions"><span id="best-practices-payouts"></span><h2>Reducing Declined Transactions<a class="headerlink" href="#reducing-declined-transactions" title="Permalink to this headline"></a>
 </h2>
 <p>Fraud and Card declinations can be reduced if the following information is supplied when tokenizing a card:</p>
 <ul class="simple">
@@ -1477,7 +1145,7 @@ Balanced highly recommends collecting <span class="docutils literal"><code>secur
 transactions on American Express cards. Collecting this information dramatically
 increases acceptance rates for AMEX.</div>
 </section><hr>
-<section id="catching-fraud-early"><h2>Catching Fraud Early<a class="headerlink" href="#catching-fraud-early" title="Permalink to this headline">∵</a>
+<section id="catching-fraud-early"><h2>Catching Fraud Early<a class="headerlink" href="#catching-fraud-early" title="Permalink to this headline"></a>
 </h2>
 <p>It's very important to take a proactive stance against fraud. Below are some
 tips to help guard against it. We recommend marketplaces take advantage of
@@ -1493,7 +1161,7 @@ unverified customers. Refer to <a class="reference internal" href="overview.html
 <li>Respond in a timely fashion to Balanced inquiries about chargebacks or suspicious transactions</li>
 <li>Report fraud to <a class="reference external" href="mailto:support%40balancedpayments.com">support<span>@</span>balancedpayments<span>.</span>com</a>.</li>
 </ul></section><hr>
-<section id="reducing-payout-delays"><span id="best-practices-reducing-payout-delays"></span><h2>Reducing Payout Delays<a class="headerlink" href="#reducing-payout-delays" title="Permalink to this headline">∵</a>
+<section id="reducing-payout-delays"><span id="best-practices-reducing-payout-delays"></span><h2>Reducing Payout Delays<a class="headerlink" href="#reducing-payout-delays" title="Permalink to this headline"></a>
 </h2>
 <p>Automated Clearing House transactions are asynchronous, requiring upfront effort
 in educating your consumers and setting the appropriate expectations to deliver
@@ -1564,12 +1232,12 @@ form, your users will provide the correct bank routing and account numbers.</p>
 expected. Once a successful payout has been made, future credits to that bank account
 will continue to take one business day when issued before the
 <a class="reference internal" href="overview.html#payouts-cutoff"><em>next-day cut-offs</em></a>.</p>
-<p>If a payout does fail for any reason, we’ll notify you via email, dashboard, and webhook.
+<p>If a payout does fail for any reason, we&acirc;&#128;&#153;ll notify you via email, dashboard, and webhook.
 If a customer complains about a payout failure and you do not see any notification with in
 the expected time window, please reach out to <a class="reference external" href="mailto:support%40balancedpayments.com">support<span>@</span>balancedpayments<span>.</span>com</a> and we'll track
 down the payout as soon as possible.</p>
 </section><hr>
-<section id="use-meta"><h2>Use Meta<a class="headerlink" href="#use-meta" title="Permalink to this headline">∵</a>
+<section id="use-meta"><h2>Use Meta<a class="headerlink" href="#use-meta" title="Permalink to this headline"></a>
 </h2>
 <p>The <span class="docutils literal"><code>meta</code></span> field exists on all resources in the Balanced API. It may be used
 as a dictionary of arbitrary key/value pairs, where each key and value is a
@@ -1578,7 +1246,7 @@ accounts in our system with the account name on your system or annotate
 transactions with order numbers. The format is generally up to you, but
 Balanced reserves some keys in the <span class="docutils literal"><code>meta</code></span> field. These are fields that may be
 passed in by you in order to help fight fraud and respond to chargebacks.</p>
-<section id="shipping-address"><h3>Shipping Address<a class="headerlink" href="#shipping-address" title="Permalink to this headline">∵</a>
+<section id="shipping-address"><h3>Shipping Address<a class="headerlink" href="#shipping-address" title="Permalink to this headline"></a>
 </h3>
 <p>Marketplaces may supply shipping fulfillment information by prefixing keys
 specifying address data with the <span class="docutils literal"><code>shipping.</code></span> prefix. The specific
@@ -1607,7 +1275,7 @@ dictionary:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</section><section id="listing"><h3>Listing<a class="headerlink" href="#listing" title="Permalink to this headline">∵</a>
+</section><section id="listing"><h3>Listing<a class="headerlink" href="#listing" title="Permalink to this headline"></a>
 </h3>
 <p>Balanced <strong>strongly</strong> recommends marketplaces supply listing information for each
 transaction using meta. This can be done by specifying the listing URL in the
@@ -1619,16 +1287,16 @@ transaction using meta. This can be done by specifying the listing URL in the
 </pre></div>
 </div>
 </section></section><hr>
-<section id="implementation-patterns"><span id="best-practices-implementation-patterns"></span><h2>Implementation Patterns<a class="headerlink" href="#implementation-patterns" title="Permalink to this headline">∵</a>
+<section id="implementation-patterns"><span id="best-practices-implementation-patterns"></span><h2>Implementation Patterns<a class="headerlink" href="#implementation-patterns" title="Permalink to this headline"></a>
 </h2>
-<section id="recurring-billing"><h3>Recurring billing<a class="headerlink" href="#recurring-billing" title="Permalink to this headline">∵</a>
+<section id="recurring-billing"><h3>Recurring billing<a class="headerlink" href="#recurring-billing" title="Permalink to this headline"></a>
 </h3>
 <p>While the Balanced API inherently supports the ability to perform recurring
 billing, the logic for recurring billing must be implemented into applications
 that consume the API. Applications can make use of cron or other scheduling
 utilities to process recurring billing or take advantage of the Python-based
 Balanced open-source application, <a class="reference external" href="https://github.com/balanced/billy">Billy</a>.</p>
-</section><section id="charging-in-the-future"><h3>Charging in the future<a class="headerlink" href="#charging-in-the-future" title="Permalink to this headline">∵</a>
+</section><section id="charging-in-the-future"><h3>Charging in the future<a class="headerlink" href="#charging-in-the-future" title="Permalink to this headline"></a>
 </h3>
 <p>A typical first-thought solution to charging in the future is to use holds.
 Marketplaces centered around crowdfunding often want to use holds to ensure
@@ -1642,7 +1310,7 @@ you should simply debit the card.</p>
 <p>Holds are suited for environments where the exact cost of a transaction
 cannot be predicted; for example, tips and temporary deposits.</p>
 </section></section><hr>
-<section id="store-uris"><span id="best-practices-uri-vs-id"></span><h2>Store URIs<a class="headerlink" href="#store-uris" title="Permalink to this headline">∵</a>
+<section id="store-uris"><span id="best-practices-uri-vs-id"></span><h2>Store URIs<a class="headerlink" href="#store-uris" title="Permalink to this headline"></a>
 </h2>
 <p>Do you store the <span class="docutils literal"><code>uri</code></span> or the <span class="docutils literal"><code>id</code></span> in your database? <strong>Always, always
 store the URI</strong>.</p>
@@ -1662,7 +1330,7 @@ note</div>
 <div class="alert alert-gray">
 URIs will not be longer than 255 characters.</div>
 </section><hr>
-<section id="getting-help"><span id="best-practices-getting-help"></span><h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">∵</a>
+<section id="getting-help"><span id="best-practices-getting-help"></span><h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline"></a>
 </h2>
 <p>When encountering a problem, one of the best tools available to you is
 the Logs area in the Dashboard. These logs give valuable insight into
@@ -1684,13 +1352,13 @@ that we have a sample set that we can begin investigating)</li>
 <li>Amount and type of transaction</li>
 <li>Last 4 digits and type of the affected card (if applicable)</li>
 </ul></section></section><hr>
-<span id="document-processing"></span><section id="processing"><span id="id1"></span><h1>Processing<a class="headerlink" href="#processing" title="Permalink to this headline">∵</a>
+<span id="document-processing"></span><section id="processing"><span id="id1"></span><h1>Processing<a class="headerlink" href="#processing" title="Permalink to this headline"></a>
 </h1>
 <p>Balanced provides a complete processing solution for accepting credit
 card payments in a simple, secure manner, relieving you from the hassles
 of PCI compliance.</p>
 <hr>
-<section id="debits"><h2>Debits<a class="headerlink" href="#debits" title="Permalink to this headline">∵</a>
+<section id="debits"><h2>Debits<a class="headerlink" href="#debits" title="Permalink to this headline"></a>
 </h2>
 <div class="span6">
 <div class="header3">
@@ -1727,7 +1395,7 @@ Testing</div>
 <div class="clear">
 </div>
 </section><hr>
-<section id="refunds"><h2>Refunds<a class="headerlink" href="#refunds" title="Permalink to this headline">∵</a>
+<section id="refunds"><h2>Refunds<a class="headerlink" href="#refunds" title="Permalink to this headline"></a>
 </h2>
 <p>You can refund a debit up to its original amount, so that means you can partially
 refund a debit as well.</p>
@@ -1740,14 +1408,14 @@ For credit cards it typically takes one business day for refunds to
 be reflected on a card statement, but it's possible for the issuing bank to
 take as many as five business days to process a refund.</div>
 <p>Here are some scenarios:</p>
-<section id="full-refund"><h3>Full Refund<a class="headerlink" href="#full-refund" title="Permalink to this headline">∵</a>
+<section id="full-refund"><h3>Full Refund<a class="headerlink" href="#full-refund" title="Permalink to this headline"></a>
 </h3>
 <p>Let's say you've debited an account for $20.00</p>
 <ul class="simple">
 <li>Your marketplace's <a class="reference external" href="https://dashboard.balancedpayments.com/#/marketplaces/">dashboard</a> escrow balance says $20.00</li>
 <li>You issue a refund for $20.00</li>
 <li>Your marketplace's <a class="reference external" href="https://dashboard.balancedpayments.com/#/marketplaces/">dashboard</a> escrow balance says $0.00</li>
-</ul></section><section id="partial-refund"><h3>Partial Refund<a class="headerlink" href="#partial-refund" title="Permalink to this headline">∵</a>
+</ul></section><section id="partial-refund"><h3>Partial Refund<a class="headerlink" href="#partial-refund" title="Permalink to this headline"></a>
 </h3>
 <p>You can also perform multiple partial refunds up to the original amount.</p>
 <p>Let's say you've debited an account for $20.00</p>
@@ -1757,7 +1425,7 @@ take as many as five business days to process a refund.</div>
 <li>Your marketplace's <a class="reference external" href="https://dashboard.balancedpayments.com/#/marketplaces/">dashboard</a> escrow balance says $10.00</li>
 <li>You issue another refund for $5.00</li>
 <li>Your marketplace's <a class="reference external" href="https://dashboard.balancedpayments.com/#/marketplaces/">dashboard</a> escrow balance says $5.00</li>
-</ul></section><section id="not-enough-funds-to-refund"><h3>Not Enough Funds to Refund<a class="headerlink" href="#not-enough-funds-to-refund" title="Permalink to this headline">∵</a>
+</ul></section><section id="not-enough-funds-to-refund"><h3>Not Enough Funds to Refund<a class="headerlink" href="#not-enough-funds-to-refund" title="Permalink to this headline"></a>
 </h3>
 <p>Let's say you've debited an account for $20.00</p>
 <ul class="simple">
@@ -1765,12 +1433,8 @@ take as many as five business days to process a refund.</div>
 <li>You issue a refund for $30.00</li>
 <li>The API will return a <strong>400</strong> status code, similar to:</li>
 </ul>
-<div class="highlight-bash">
-<div class="highlight"><pre>Bad Request: 400: Invalid field <span class="o">[</span>amount<span class="o">]</span> - <span class="s2">"3000"</span> must be &lt;<span class="o">=</span> 2000
-</pre></div>
-</div>
 </section></section><hr>
-<section id="holds"><span id="processing-holds"></span><h2>Holds<a class="headerlink" href="#holds" title="Permalink to this headline">∵</a>
+<section id="holds"><span id="processing-holds"></span><h2>Holds<a class="headerlink" href="#holds" title="Permalink to this headline"></a>
 </h2>
 <p>Balanced supports the concepts of <em class="xref std std-term">holds</em>. Holds are a type of
 authorization that reserves (i.e. holds) a dollar amount on the customer's
@@ -1792,33 +1456,15 @@ cumbersome to manage.</p>
 <p>If your project requires holds and you need help, please reach out
 to us using our <a class="reference internal" href="overview.html#overview-support"><em>support channels</em></a>.</p>
 </div>
-<section id="creating-a-hold"><h3>Creating a hold<a class="headerlink" href="#creating-a-hold" title="Permalink to this headline">∵</a>
+<section id="creating-a-hold"><h3>Creating a hold<a class="headerlink" href="#creating-a-hold" title="Permalink to this headline"></a>
 </h3>
 <p>A hold is created in a way similar to creating a debit. Creating a hold will
 return a URI which can be used to perform a capture later, up to the full
 amount of the hold.</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/marketplaces/TEST-MP2oRTf6eEiGrBkS3ahqYdHN/holds <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"source_uri=/v1/marketplaces/TEST-MP2oRTf6eEiGrBkS3ahqYdHN/cards/CC7oB87PtEgNOlnyCDBsexIQ"</span> <span class="se">\</span>
-     -d <span class="s2">"amount=5000"</span> <span class="se">\</span>
-     -d <span class="s2">"description=Some descriptive text for the debit in the dashboard"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">hold</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Hold</span><span class="p">(</span>
-  <span class="n">source_uri</span><span class="o">=</span><span class="s">'/v1/marketplaces/TEST-MP52IlCmywk6hGbgS75QSlN/cards/CC3AiMy0KEP1PhwnffMk32RF'</span><span class="p">,</span>
-  <span class="n">amount</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span>
-  <span class="n">description</span><span class="o">=</span><span class="s">'Some descriptive text for the debit in the dashboard'</span>
-<span class="p">)</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD'</span><span class="p">)</span>
@@ -1831,66 +1477,16 @@ amount of the hold.</p>
 <span class="n">hold</span><span class="o">.</span><span class="n">save</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$marketplace</span> <span class="o">=</span> <span class="nx">\Balanced\Marketplace</span><span class="o">::</span><span class="na">mine</span><span class="p">();</span>
-<span class="nv">$hold</span> <span class="o">=</span> <span class="nv">$marketplace</span><span class="o">-&gt;</span><span class="na">holds</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
-  <span class="s2">"amount"</span> <span class="o">=&gt;</span> <span class="mi">5000</span><span class="p">,</span>
-  <span class="s2">"description"</span> <span class="o">=&gt;</span> <span class="s2">"Some descriptive text for the debit in the dashboard"</span><span class="p">,</span>
-  <span class="s2">"source_uri"</span> <span class="o">=&gt;</span> <span class="s2">"/v1/marketplaces/TEST-MP4K6K0PWGyPtXL4LZ42sQSb/cards/CC72hXVwWbCJsozvJoRELzIc"</span>
-<span class="p">));</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
 </div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Customer</span> <span class="n">customer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">(</span><span class="s">"/v1/customers/CU12eUdTk8OgEj7VbJVFeP0q"</span><span class="o">);</span>
-<span class="n">customer</span><span class="o">.</span><span class="na">addCard</span><span class="o">(</span><span class="s">"/v1/marketplaces/TEST-MP5FKPQwyjvVgTDt7EiRw3Kq/cards/CC15RAm6JJIEIae6bicvlWRw"</span><span class="o">);</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"amount"</span><span class="o">,</span> <span class="mi">5000</span><span class="o">);</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"source_uri"</span><span class="o">,</span> <span class="s">"/v1/marketplaces/TEST-MP5FKPQwyjvVgTDt7EiRw3Kq/cards/CC15RAm6JJIEIae6bicvlWRw"</span><span class="o">);</span>
-
-<span class="n">Hold</span> <span class="n">hold</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Hold</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-<span class="n">hold</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-</pre></div>
-</div>
-</div>
-</section><section id="capturing-a-hold"><h3>Capturing a hold<a class="headerlink" href="#capturing-a-hold" title="Permalink to this headline">∵</a>
+</section><section id="capturing-a-hold"><h3>Capturing a hold<a class="headerlink" href="#capturing-a-hold" title="Permalink to this headline"></a>
 </h3>
 <p>Here's an example on how to capture a hold:</p>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/customers/CU7lmdAzmIaBZI1iWyVh9p0q/debits <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"appears_on_statement_as=ShowsUpOnStmt"</span> <span class="se">\</span>
-     -d <span class="s2">"description=Some descriptive text for the debit in the dashboard"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">hold</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Hold</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'/v1/marketplaces/TEST-MP52IlCmywk6hGbgS75QSlN/holds/HL3CgDhSRS2YOwbR7Uj0eXtU'</span><span class="p">)</span>
-<span class="n">debit</span> <span class="o">=</span> <span class="n">hold</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span>
-  <span class="n">appears_on_statement_as</span><span class="o">=</span><span class="s">'ShowsUpOnStmt'</span><span class="p">,</span>
-  <span class="n">description</span><span class="o">=</span><span class="s">'Some descriptive text for the debit in the dashboard'</span>
-<span class="p">)</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD'</span><span class="p">)</span>
@@ -1902,39 +1498,11 @@ amount of the hold.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$hold</span> <span class="o">=</span> <span class="nx">Balanced\Hold</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s2">"/v1/marketplaces/TEST-MP4K6K0PWGyPtXL4LZ42sQSb/holds/HL743q4NqJPc0cxbidCj1WGk"</span><span class="p">);</span>
-<span class="nv">$debit</span> <span class="o">=</span> <span class="nv">$hold</span><span class="o">-&gt;</span><span class="na">capture</span><span class="p">();</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">Hold</span> <span class="n">hold</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Hold</span><span class="o">(</span><span class="s">"/v1/marketplaces/TEST-MP5FKPQwyjvVgTDt7EiRw3Kq/holds/HL1a9V1z4YLJd0vTGWOvXxs2"</span><span class="o">);</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"amount"</span><span class="o">,</span> <span class="mi">1000</span><span class="o">);</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"description"</span><span class="o">,</span> <span class="s">"Some descriptive text for the debit in the dashboard"</span><span class="o">);</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"appears_on_statement_as"</span><span class="o">,</span> <span class="s">"ShowsUpOnStmt"</span><span class="o">);</span>
-
-<span class="n">hold</span><span class="o">.</span><span class="na">capture</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-</pre></div>
-</div>
 </div>
 </section></section><hr>
-<section id="transaction-limits"><span id="processing-transaction-limits"></span><h2>Transaction Limits<a class="headerlink" href="#transaction-limits" title="Permalink to this headline">∵</a>
+<section id="transaction-limits"><span id="processing-transaction-limits"></span><h2>Transaction Limits<a class="headerlink" href="#transaction-limits" title="Permalink to this headline"></a>
 </h2>
 <p>The minimum transaction amount is $0.50.</p>
 <p>The maximum transaction amounts are as follows:</p>
@@ -1949,14 +1517,14 @@ if you are planning to process larger amounts.</p>
 <p>These limits do not apply to the marketplace owner bank account.</p>
 </div>
 </section></section><hr>
-<span id="document-payouts"></span><section id="balanced-payouts"><span id="payouts"></span><h1>Balanced Payouts<a class="headerlink" href="#balanced-payouts" title="Permalink to this headline">∵</a>
+<span id="document-payouts"></span><section id="balanced-payouts"><span id="payouts"></span><h1>Balanced Payouts<a class="headerlink" href="#balanced-payouts" title="Permalink to this headline"></a>
 </h1>
 <p>Balanced Payouts is a stand-alone service for sending money to your seller's
 bank account via the ACH network. You can use Balanced Payouts with your
 existing processing solution without needing to switch or you may want to
 integrate <a class="reference internal" href="overview.html#processing"><em>Balanced Processing</em></a>.</p>
 <hr>
-<section id="credits"><h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">∵</a>
+<section id="credits"><h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline"></a>
 </h2>
 <div class="span6">
 <div class="header3">
@@ -1988,7 +1556,7 @@ Testing</div>
 <div class="clear">
 </div>
 </section><hr>
-<section id="credit-s-status-field"><h2>Credit's Status Field<a class="headerlink" href="#credit-s-status-field" title="Permalink to this headline">∵</a>
+<section id="credit-s-status-field"><h2>Credit's Status Field<a class="headerlink" href="#credit-s-status-field" title="Permalink to this headline"></a>
 </h2>
 <p>Credits have a <span class="docutils literal"><code>status</code></span> field representing the current status of the credit
 through the payout process.</p>
@@ -2056,7 +1624,7 @@ after three business days with a rejection. As soon as Balanced receives the
 rejection, the status is updated to <span class="docutils literal"><code>failed</code></span>
 </dd>
 </dl></section><hr>
-<section id="payout-methods"><h2>Payout Methods<a class="headerlink" href="#payout-methods" title="Permalink to this headline">∵</a>
+<section id="payout-methods"><h2>Payout Methods<a class="headerlink" href="#payout-methods" title="Permalink to this headline"></a>
 </h2>
 <p>Currently Balanced only supports payouts to bank accounts via ACH but we will
 add more. All of this is publicly tracked via github issues. For example:</p>
@@ -2067,7 +1635,7 @@ add more. All of this is publicly tracked via github issues. For example:</p>
 <p>Comment on those that would be useful to you or create issues for ones you'd
 like to see supported!</p>
 </section><hr>
-<section id="canceling-credits"><h2>Canceling Credits<a class="headerlink" href="#canceling-credits" title="Permalink to this headline">∵</a>
+<section id="canceling-credits"><h2>Canceling Credits<a class="headerlink" href="#canceling-credits" title="Permalink to this headline"></a>
 </h2>
 <p>Canceling a credit is currently under active development and discussion on
 <a class="reference external" href="https://github.com/balanced/balanced-api/issues/151">github issue #151</a> - it's not very straightforward due to the asynchronous
@@ -2078,7 +1646,7 @@ credit.</p>
 <p>When referencing a specific credit, please provide the credit's <span class="docutils literal"><code>uri</code></span> so that
 we may quickly proceed with fulfilling your request.</p>
 </section><hr>
-<section id="pre-funding-your-account"><h2>Pre-funding Your Account<a class="headerlink" href="#pre-funding-your-account" title="Permalink to this headline">∵</a>
+<section id="pre-funding-your-account"><h2>Pre-funding Your Account<a class="headerlink" href="#pre-funding-your-account" title="Permalink to this headline"></a>
 </h2>
 <p>Any payout issued requires maintaining sufficient money in your Balanced account.</p>
 <p>If you do not have a sufficient balance, Balanced will return a <span class="docutils literal"><code>409</code></span> http
@@ -2095,7 +1663,7 @@ you. We're publicly tracking this on <a class="reference external" href="https:/
 <p>Transfers may take 2-5 days for the funds to become available; alternatively, you
 may fund your account <strong>instantly</strong> with <a class="reference internal" href="overview.html#processing"><em>Balanced Processing!</em></a></p>
 </section><hr>
-<section id="submission-delivery-times"><span id="payouts-cutoff"></span><h2>Submission &amp; Delivery times<a class="headerlink" href="#submission-delivery-times" title="Permalink to this headline">∵</a>
+<section id="submission-delivery-times"><span id="payouts-cutoff"></span><h2>Submission &amp; Delivery times<a class="headerlink" href="#submission-delivery-times" title="Permalink to this headline"></a>
 </h2>
 <div class="table-header">
 The cutoff for submitting payouts is <strong>3:00 PM Pacific (PT)</strong> time. Payouts will <em>not</em> be
@@ -2223,7 +1791,7 @@ at <strong>3:00 PM Pacific (PT)</strong>.</div>
 <thead valign="bottom"><tr class="row-odd">
 <th class="head">Type of scenario</th>
 <th class="head">Example submission date</th>
-<th class="head">Available when? <a class="footnote-reference" href="#id4" id="id3">[†]</a>
+<th class="head">Available when? <a class="footnote-reference" href="#id4" id="id3">[&acirc;&#128;&nbsp;]</a>
 </th>
 </tr></thead>
 <tbody valign="top">
@@ -2250,21 +1818,21 @@ at <strong>3:00 PM Pacific (PT)</strong>.</div>
 <col>
 </colgroup>
 <tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id3">[†]</a></td>
+<td class="label"><a class="fn-backref" href="#id3">[&acirc;&#128;&nbsp;]</a></td>
 <td>Assumes that day is a working business day -- does not fall on a
 weekend or a <a class="reference external" href="bankholidays">federal reserve holiday</a>.</td>
 </tr></tbody>
 </table></section></section><hr>
-<span id="document-fees"></span><section id="pricing-and-fees"><span id="fees"></span><h1>Pricing and fees<a class="headerlink" href="#pricing-and-fees" title="Permalink to this headline">∵</a>
+<span id="document-fees"></span><section id="pricing-and-fees"><span id="fees"></span><h1>Pricing and fees<a class="headerlink" href="#pricing-and-fees" title="Permalink to this headline"></a>
 </h1>
-<p>You will pay a fee of 25¢ when you successfully payout to a seller’s
-bank account, and 2.9% + 30¢ when you successfully charge a buyer’s
+<p>You will pay a fee of 25&Acirc;&cent; when you successfully payout to a seller&acirc;&#128;&#153;s
+bank account, and 2.9% + 30&Acirc;&cent; when you successfully charge a buyer&acirc;&#128;&#153;s
 credit card. We try to keep our pricing straightforward, so Balanced
 does not charge any fees besides those listed here.</p>
 <hr>
-<section id="payout-pricing"><span id="fees-payouts"></span><h2>Payout Pricing<a class="headerlink" href="#payout-pricing" title="Permalink to this headline">∵</a>
+<section id="payout-pricing"><span id="fees-payouts"></span><h2>Payout Pricing<a class="headerlink" href="#payout-pricing" title="Permalink to this headline"></a>
 </h2>
-<p>It costs just simply 25¢ to issue a next-day ACH credit. Our full
+<p>It costs just simply 25&Acirc;&cent; to issue a next-day ACH credit. Our full
 fee per operation is listed below:</p>
 <table border="1" class="table table-hover docutils">
 <colgroup>
@@ -2278,7 +1846,7 @@ fee per operation is listed below:</p>
 <tbody valign="top">
 <tr class="row-even">
 <td>next-day ACH</td>
-<td>25¢</td>
+<td>25&Acirc;&cent;</td>
 </tr>
 <tr class="row-odd">
 <td>failure</td>
@@ -2306,9 +1874,9 @@ fee per operation is listed below:</p>
 </tr>
 </tbody>
 </table></section><hr>
-<section id="processing-pricing"><span id="fees-processing"></span><h2>Processing Pricing<a class="headerlink" href="#processing-pricing" title="Permalink to this headline">∵</a>
+<section id="processing-pricing"><span id="fees-processing"></span><h2>Processing Pricing<a class="headerlink" href="#processing-pricing" title="Permalink to this headline"></a>
 </h2>
-<p>Charging credit cards costs just 2.9% and 30¢ per successful charge. Our full
+<p>Charging credit cards costs just 2.9% and 30&Acirc;&cent; per successful charge. Our full
 fees per operation is listed below:</p>
 <table border="1" class="table table-hover docutils">
 <colgroup>
@@ -2322,12 +1890,12 @@ fees per operation is listed below:</p>
 <tbody valign="top">
 <tr class="row-even">
 <td>successful credit card charge</td>
-<td>2.9% + 30¢ <a class="footnote-reference" href="#id3" id="id1">[1]</a>
+<td>2.9% + 30&Acirc;&cent; <a class="footnote-reference" href="#id3" id="id1">[1]</a>
 </td>
 </tr>
 <tr class="row-odd">
 <td>successful bank account charge</td>
-<td>1% + 30¢ <a class="footnote-reference" href="#id4" id="id2">[2]</a>
+<td>1% + 30&Acirc;&cent; <a class="footnote-reference" href="#id4" id="id2">[2]</a>
 </td>
 </tr>
 <tr class="row-even">
@@ -2376,7 +1944,7 @@ fees per operation is listed below:</p>
 <td>Fee is capped at $5</td>
 </tr></tbody>
 </table></section><hr>
-<section id="invoicing-fees"><span id="id5"></span><h2>Invoicing fees<a class="headerlink" href="#invoicing-fees" title="Permalink to this headline">∵</a>
+<section id="invoicing-fees"><span id="id5"></span><h2>Invoicing fees<a class="headerlink" href="#invoicing-fees" title="Permalink to this headline"></a>
 </h2>
 <p>Balanced will create invoices to collect fees daily. These invoices can be
 viewed under the invoices tab of the Balanced dashboard. These fees are
@@ -2387,27 +1955,27 @@ note</div>
 <div class="alert alert-gray">
 <strong>Balanced will never take fees from the operating capital (escrow account) of the marketplace.</strong>
 </div>
-<section id="example"><h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">∵</a>
+<section id="example"><h3>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a>
 </h3>
 <p>A buyer pays for a service on Monday from a third-party merchant. You charge
 the buyer $10, which increases your escrow balance by $10. Balanced will invoice
-you, on Monday for 2.9% of $10 (or 29¢), plus 30¢, and debit your bank account
-for a total of 59¢.</p>
+you, on Monday for 2.9% of $10 (or 29&Acirc;&cent;), plus 30&Acirc;&cent;, and debit your bank account
+for a total of 59&Acirc;&cent;.</p>
 <p>On Wednesday, the third-party merchant completes performing a service for the
 buyer, and the buyer acknowledges this. You credit out payment to the
 merchant, likely keeping a portion to pay your fees. Perhaps you pay out $7
 to the merchant, leaving you with $3 in your escrow account. Balanced will
-invoice you, on Wednesday, 25¢ for this ACH credit.</p>
+invoice you, on Wednesday, 25&Acirc;&cent; for this ACH credit.</p>
 <p>The $3 that is left from the buyer's $10 is your revenue from this order. You
 decide to credit this to your own bank account on Friday. Balanced doesn't
 charge you for this credit, as credits to owner accounts are free.</p>
 </section></section><hr>
-<section id="funds-flow"><h2>Funds Flow<a class="headerlink" href="#funds-flow" title="Permalink to this headline">∵</a>
+<section id="funds-flow"><h2>Funds Flow<a class="headerlink" href="#funds-flow" title="Permalink to this headline"></a>
 </h2>
 <p>It's important to understand how the funds flow works on Balanced. First and
 foremost, when a charge occurs on Balanced, the amount you've charged your
 user is the exact amount that shows up in the balance.</p>
-<section id="escrow"><span id="mp-escrow"></span><h3>Escrow<a class="headerlink" href="#escrow" title="Permalink to this headline">∵</a>
+<section id="escrow"><span id="mp-escrow"></span><h3>Escrow<a class="headerlink" href="#escrow" title="Permalink to this headline"></a>
 </h3>
 <p>Once a card is successfully charged your funds are implicitly in escrow for
 your marketplace. This gives you complete control on funds disbursement.</p>
@@ -2430,7 +1998,7 @@ using <a class="reference internal" href="overview.html#payouts"><em>Balanced Pa
 </ul>
 <p>In today's growing collaborative consumption economy, this model is extremely
 powerful for providing marketplace liquidity to enable new forms of commerce.</p>
-</section><section id="collecting-your-fees"><h3>Collecting Your Fees<a class="headerlink" href="#collecting-your-fees" title="Permalink to this headline">∵</a>
+</section><section id="collecting-your-fees"><h3>Collecting Your Fees<a class="headerlink" href="#collecting-your-fees" title="Permalink to this headline"></a>
 </h3>
 <p>Now that you've understood how incoming money comes in to Balanced and the
 concept of implicit escrow, you might ask yourself, "where do I take my
@@ -2467,7 +2035,7 @@ renters, a.k.a. the buyers.</p>
 <td class="label"><a class="fn-backref" href="#id6">[3]</a></td>
 <td>Our sample marketplace is actually called <a class="reference external" href="http://rentmybike.heroku.com">Rent My Bike</a> :)</td>
 </tr></tbody>
-</table></section><section id="fee-scenario-1"><h3>Fee Scenario #1<a class="headerlink" href="#fee-scenario-1" title="Permalink to this headline">∵</a>
+</table></section><section id="fee-scenario-1"><h3>Fee Scenario #1<a class="headerlink" href="#fee-scenario-1" title="Permalink to this headline"></a>
 </h3>
 <p>Your marketplace listing fee is 10%. So, say Alice lists her bike for $100.00.
 Bob decides to rent this bike - costing him $100.00.</p>
@@ -2485,7 +2053,7 @@ Bob decides to rent this bike - costing him $100.00.</p>
 <li>Your money is in your bank account next business day</li>
 <li>Alice's money is in her bank account next business day</li>
 <li>Your marketplace's <a class="reference external" href="https://dashboard.balancedpayments.com/#/marketplaces/">dashboard</a> escrow balance now shows $0.00</li>
-</ul></section><section id="fee-scenario-2"><h3>Fee Scenario #2<a class="headerlink" href="#fee-scenario-2" title="Permalink to this headline">∵</a>
+</ul></section><section id="fee-scenario-2"><h3>Fee Scenario #2<a class="headerlink" href="#fee-scenario-2" title="Permalink to this headline"></a>
 </h3>
 <p>Your marketplace renting fee is 10%. So, say Alice lists her bike for 100.00$.
 Bob decides to rent this bike - costing him $110.00.</p>
@@ -2504,7 +2072,7 @@ Bob decides to rent this bike - costing him $110.00.</p>
 <li>Your money is in your bank account next business day</li>
 <li>Alice's money is in her bank account next business day</li>
 <li>Your marketplace's <a class="reference external" href="https://dashboard.balancedpayments.com/#/marketplaces/">dashboard</a> escrow balance now shows $0.00</li>
-</ul></section><section id="fee-scenario-3"><h3>Fee Scenario #3<a class="headerlink" href="#fee-scenario-3" title="Permalink to this headline">∵</a>
+</ul></section><section id="fee-scenario-3"><h3>Fee Scenario #3<a class="headerlink" href="#fee-scenario-3" title="Permalink to this headline"></a>
 </h3>
 <p>Your marketplace renting fee is 10%. You also charge a 10% listing fee.</p>
 <p>So, say Alice lists her bike for 100.00$. Bob decides to rent this
@@ -2527,10 +2095,10 @@ bike - costing him $110.00.</p>
 <li>Alice's money is in her bank account next business day</li>
 <li>Your marketplace's <a class="reference external" href="https://dashboard.balancedpayments.com/#/marketplaces/">dashboard</a> escrow balance now shows $0.00</li>
 </ul></section></section></section><hr>
-<span id="document-resources"></span><section id="resources"><span id="id1"></span><h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">∵</a>
+<span id="document-resources"></span><section id="resources"><span id="id1"></span><h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline"></a>
 </h1>
 <hr>
-<section id="test-credit-card-numbers"><span id="resources-test-credit-cards"></span><h2>Test credit card numbers<a class="headerlink" href="#test-credit-card-numbers" title="Permalink to this headline">∵</a>
+<section id="test-credit-card-numbers"><span id="resources-test-credit-cards"></span><h2>Test credit card numbers<a class="headerlink" href="#test-credit-card-numbers" title="Permalink to this headline"></a>
 </h2>
 <p>These cards will be accepted in our system only for a <strong>TEST</strong> marketplace.</p>
 <table border="1" class="table docutils">
@@ -2607,7 +2175,7 @@ expect this failure when a user tried to enter in a credit card which used to
 work but has been canceled.</td>
 </tr></tbody>
 </table></section><hr>
-<section id="test-bank-account-numbers"><span id="resources-test-bank-accounts"></span><h2>Test bank account numbers<a class="headerlink" href="#test-bank-account-numbers" title="Permalink to this headline">∵</a>
+<section id="test-bank-account-numbers"><span id="resources-test-bank-accounts"></span><h2>Test bank account numbers<a class="headerlink" href="#test-bank-account-numbers" title="Permalink to this headline"></a>
 </h2>
 <p>Balanced provides various utilities to aid you in testing your <a class="reference internal" href="overview.html#payouts"><em>Balanced Payouts</em></a>
 integration.</p>
@@ -2674,39 +2242,12 @@ account numbers that can simulate various scenarios that can go wrong.</p>
 </tr>
 </tbody>
 </table>
-<section id="simulating-erroneous-routing-numbers"><h3>Simulating erroneous routing numbers<a class="headerlink" href="#simulating-erroneous-routing-numbers" title="Permalink to this headline">∵</a>
+<section id="simulating-erroneous-routing-numbers"><h3>Simulating erroneous routing numbers<a class="headerlink" href="#simulating-erroneous-routing-numbers" title="Permalink to this headline"></a>
 </h3>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/marketplaces/TEST-MP2oRTf6eEiGrBkS3ahqYdHN/bank_accounts <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"routing_number=100000007"</span> <span class="se">\</span>
-     -d <span class="s2">"type=checking"</span> <span class="se">\</span>
-     -d <span class="s2">"account_number=9900000001"</span> <span class="se">\</span>
-     -d <span class="s2">"name=Johann Bernoulli"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">bank_account</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">BankAccount</span><span class="p">(</span>
-  <span class="n">routing_number</span><span class="o">=</span><span class="s">'111111118'</span><span class="p">,</span>
-  <span class="nb">type</span><span class="o">=</span><span class="s">'checking'</span><span class="p">,</span>
-  <span class="n">account_number</span><span class="o">=</span><span class="s">'9900000001'</span><span class="p">,</span>
-  <span class="n">name</span><span class="o">=</span><span class="s">'Johann Bernoulli'</span>
-<span class="p">)</span>
-
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">bank_account</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-<span class="k">except</span> <span class="n">balanced</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">HTTPError</span><span class="p">,</span> <span class="n">ex</span><span class="p">:</span>
-    <span class="k">assert</span> <span class="n">ex</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">400</span>
-    <span class="k">assert</span> <span class="s">'Routing number is invalid'</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">description</span>
-    <span class="k">assert</span> <span class="n">ex</span><span class="o">.</span><span class="n">request_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq'</span><span class="p">)</span>
@@ -2726,82 +2267,15 @@ account numbers that can simulate various scenarios that can go wrong.</p>
 <span class="k">end</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$bank_account</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Balanced\BankAccount</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
-    <span class="s2">"account_number"</span> <span class="o">=&gt;</span> <span class="s2">"9900000001"</span><span class="p">,</span>
-    <span class="s2">"name"</span> <span class="o">=&gt;</span> <span class="s2">"Johann Bernoulli"</span><span class="p">,</span>
-    <span class="s2">"routing_number"</span> <span class="o">=&gt;</span> <span class="s2">"100000007"</span><span class="p">,</span>
-    <span class="s2">"type"</span> <span class="o">=&gt;</span> <span class="s2">"checking"</span><span class="p">,</span>
-<span class="p">));</span>
-<span class="k">try</span> <span class="p">{</span>
-    <span class="nv">$bank_account</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="k">catch</span><span class="p">(</span><span class="nx">Balanced\Errors\InvalidRoutingNumber</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// handle error here</span>
-<span class="p">}</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
 </div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">BankAccount</span> <span class="n">ba</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankAccount</span><span class="o">(</span><span class="s">"/v1/marketplaces/TEST-MP5FKPQwyjvVgTDt7EiRw3Kq/bank_accounts"</span><span class="o">);</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">account_number</span> <span class="o">=</span> <span class="s">"9900000001"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">routing_number</span> <span class="o">=</span> <span class="s">"100000007"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"Johann Bernoulli"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="s">"checking"</span><span class="o">;</span>
-<span class="k">try</span> <span class="o">{</span>
-    <span class="n">ba</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-<span class="o">}</span>
-<span class="k">catch</span> <span class="o">(</span><span class="n">HTTPError</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// handle invalid routing numbers</span>
-<span class="o">}</span>
-</pre></div>
-</div>
-</div>
-</section><section id="simulating-a-pending-status"><h3>Simulating a pending status<a class="headerlink" href="#simulating-a-pending-status" title="Permalink to this headline">∵</a>
+</section><section id="simulating-a-pending-status"><h3>Simulating a pending status<a class="headerlink" href="#simulating-a-pending-status" title="Permalink to this headline"></a>
 </h3>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/marketplaces/TEST-MP2oRTf6eEiGrBkS3ahqYdHN/credits <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"amount=10000"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[routing_number]=121000358"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[type]=checking"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[name]=Johann Bernoulli"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[account_number]=9900000001"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">bank_account_info</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">"routing_number"</span><span class="p">:</span> <span class="s">"121000358"</span><span class="p">,</span> 
-    <span class="s">"type"</span><span class="p">:</span> <span class="s">"checking"</span><span class="p">,</span> 
-    <span class="s">"account_number"</span><span class="p">:</span> <span class="s">"9900000000"</span><span class="p">,</span> 
-    <span class="s">"name"</span><span class="p">:</span> <span class="s">"Johann Bernoulli"</span>
-<span class="p">}</span>
-
-<span class="n">credit</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Credit</span><span class="p">(</span>
-    <span class="n">amount</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
-    <span class="n">bank_account</span><span class="o">=</span><span class="n">bank_account_info</span>
-<span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq'</span><span class="p">)</span>
@@ -2819,80 +2293,15 @@ account numbers that can simulate various scenarios that can go wrong.</p>
 <span class="p">)</span><span class="o">.</span><span class="n">save</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$bank_account_info</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-    <span class="s2">"account_number"</span> <span class="o">=&gt;</span> <span class="s2">"9900000000"</span><span class="p">,</span>
-    <span class="s2">"name"</span> <span class="o">=&gt;</span> <span class="s2">"Johann Bernoulli"</span><span class="p">,</span>
-    <span class="s2">"routing_number"</span> <span class="o">=&gt;</span> <span class="s2">"121000358"</span><span class="p">,</span>
-    <span class="s2">"type"</span> <span class="o">=&gt;</span> <span class="s2">"checking"</span><span class="p">,</span>
-<span class="p">);</span>
-<span class="nv">$credit</span> <span class="o">=</span> <span class="nx">Balanced\Credit</span><span class="o">::</span><span class="na">bankAccount</span><span class="p">(</span>
-    <span class="mi">10000</span><span class="p">,</span>
-    <span class="nv">$bank_account_info</span>
-<span class="p">);</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
 </div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">BankAccount</span> <span class="n">ba</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankAccount</span><span class="o">();</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">account_number</span> <span class="o">=</span> <span class="s">"9900000001"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"Johann Bernoulli"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">routing_number</span> <span class="o">=</span> <span class="s">"121000358"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="s">"checking"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"amount"</span><span class="o">,</span> <span class="mi">10000</span><span class="o">);</span>
-
-<span class="n">ba</span><span class="o">.</span><span class="na">credit</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-</pre></div>
-</div>
-</div>
-</section><section id="simulating-a-paid-status"><h3>Simulating a paid status<a class="headerlink" href="#simulating-a-paid-status" title="Permalink to this headline">∵</a>
+</section><section id="simulating-a-paid-status"><h3>Simulating a paid status<a class="headerlink" href="#simulating-a-paid-status" title="Permalink to this headline"></a>
 </h3>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/marketplaces/TEST-MP2oRTf6eEiGrBkS3ahqYdHN/credits <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"amount=10000"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[routing_number]=121000358"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[type]=checking"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[name]=Johann Bernoulli"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[account_number]=9900000002"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">bank_account_info</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">"routing_number"</span><span class="p">:</span> <span class="s">"121000358"</span><span class="p">,</span> 
-    <span class="s">"type"</span><span class="p">:</span> <span class="s">"checking"</span><span class="p">,</span> 
-    <span class="s">"account_number"</span><span class="p">:</span> <span class="s">"9900000003"</span><span class="p">,</span> 
-    <span class="s">"name"</span><span class="p">:</span> <span class="s">"Johann Bernoulli"</span>
-<span class="p">}</span>
-
-<span class="n">credit</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Credit</span><span class="p">(</span>
-    <span class="n">amount</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
-    <span class="n">bank_account</span><span class="o">=</span><span class="n">bank_account_info</span>
-<span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq'</span><span class="p">)</span>
@@ -2912,80 +2321,15 @@ account numbers that can simulate various scenarios that can go wrong.</p>
 <span class="p">)</span><span class="o">.</span><span class="n">save</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$bank_account_info</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-    <span class="s2">"account_number"</span> <span class="o">=&gt;</span> <span class="s2">"9900000003"</span><span class="p">,</span>
-    <span class="s2">"name"</span> <span class="o">=&gt;</span> <span class="s2">"Johann Bernoulli"</span><span class="p">,</span>
-    <span class="s2">"routing_number"</span> <span class="o">=&gt;</span> <span class="s2">"121000358"</span><span class="p">,</span>
-    <span class="s2">"type"</span> <span class="o">=&gt;</span> <span class="s2">"checking"</span><span class="p">,</span>
-<span class="p">);</span>
-<span class="nv">$credit</span> <span class="o">=</span> <span class="nx">Balanced\Credit</span><span class="o">::</span><span class="na">bankAccount</span><span class="p">(</span>
-    <span class="mi">10000</span><span class="p">,</span>
-    <span class="nv">$bank_account_info</span>
-<span class="p">);</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
 </div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">BankAccount</span> <span class="n">ba</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankAccount</span><span class="o">();</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">account_number</span> <span class="o">=</span> <span class="s">"9900000002"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"Johann Bernoulli"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">routing_number</span> <span class="o">=</span> <span class="s">"121000358"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="s">"checking"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"amount"</span><span class="o">,</span> <span class="mi">10000</span><span class="o">);</span>
-
-<span class="n">ba</span><span class="o">.</span><span class="na">credit</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-</pre></div>
-</div>
-</div>
-</section><section id="simulating-a-failed-status"><h3>Simulating a failed status<a class="headerlink" href="#simulating-a-failed-status" title="Permalink to this headline">∵</a>
+</section><section id="simulating-a-failed-status"><h3>Simulating a failed status<a class="headerlink" href="#simulating-a-failed-status" title="Permalink to this headline"></a>
 </h3>
 <div class="request">
 <p>Request</p>
-<div class="highlight-bash">
-<div class="highlight"><pre>curl https://api.balancedpayments.com/v1/marketplaces/TEST-MP2oRTf6eEiGrBkS3ahqYdHN/credits <span class="se">\</span>
-     -u ak-test-2J6ztzBYQlzwPu8Ofqa5kfJXoXyE8JiCR: <span class="se">\</span>
-     -d <span class="s2">"amount=10000"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[routing_number]=121000358"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[type]=checking"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[name]=Johann Bernoulli"</span> <span class="se">\</span>
-     -d <span class="s2">"bank_account[account_number]=9900000004"</span>
-</pre></div>
-</div>
-<div class="highlight-python">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">balanced</span>
 
-<span class="n">balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s">'ak-test-14W5azoiV99O1XiPwZ3faH10MaUdZ1kCA'</span><span class="p">)</span>
 
-<span class="n">bank_account_info</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">"routing_number"</span><span class="p">:</span> <span class="s">"121000358"</span><span class="p">,</span> 
-    <span class="s">"type"</span><span class="p">:</span> <span class="s">"checking"</span><span class="p">,</span> 
-    <span class="s">"account_number"</span><span class="p">:</span> <span class="s">"9900000004"</span><span class="p">,</span> 
-    <span class="s">"name"</span><span class="p">:</span> <span class="s">"Johann Bernoulli"</span>
-<span class="p">}</span>
-
-<span class="n">credit</span> <span class="o">=</span> <span class="n">balanced</span><span class="o">.</span><span class="n">Credit</span><span class="p">(</span>
-    <span class="n">amount</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
-    <span class="n">bank_account</span><span class="o">=</span><span class="n">bank_account_info</span>
-<span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</pre></div>
-</div>
 <div class="highlight-ruby">
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">'balanced'</span>
 <span class="no">Balanced</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">'ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq'</span><span class="p">)</span>
@@ -3004,50 +2348,11 @@ account numbers that can simulate various scenarios that can go wrong.</p>
 <span class="p">)</span><span class="o">.</span><span class="n">save</span>
 </pre></div>
 </div>
-<div class="highlight-php">
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">'/vendor/autoload.php'</span><span class="p">);</span>
 
-<span class="nx">Httpful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">RESTful\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-<span class="nx">Balanced\Bootstrap</span><span class="o">::</span><span class="na">init</span><span class="p">();</span>
-
-<span class="nx">Balanced\Settings</span><span class="o">::</span><span class="nv">$api_key</span> <span class="o">=</span> <span class="s2">"ak-test-2KZfoLyijij3Y6OyhDAvFRF9tXzelBLpD"</span><span class="p">;</span>
-
-<span class="nv">$bank_account_info</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-    <span class="s2">"account_number"</span> <span class="o">=&gt;</span> <span class="s2">"9900000004"</span><span class="p">,</span>
-    <span class="s2">"name"</span> <span class="o">=&gt;</span> <span class="s2">"Johann Bernoulli"</span><span class="p">,</span>
-    <span class="s2">"routing_number"</span> <span class="o">=&gt;</span> <span class="s2">"121000358"</span><span class="p">,</span>
-    <span class="s2">"type"</span> <span class="o">=&gt;</span> <span class="s2">"checking"</span><span class="p">,</span>
-<span class="p">);</span>
-<span class="nv">$credit</span> <span class="o">=</span> <span class="nx">Balanced\Credit</span><span class="o">::</span><span class="na">bankAccount</span><span class="p">(</span>
-    <span class="mi">10000</span><span class="p">,</span>
-    <span class="nv">$bank_account_info</span>
-<span class="p">);</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-</div>
-<div class="highlight-java">
-<div class="highlight"><pre><span class="n">Balanced</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="s">"ak-test-1p1Tsac7gHeMQowL2seB7ieliuAJAufyq"</span><span class="o">);</span>
-
-<span class="n">BankAccount</span> <span class="n">ba</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankAccount</span><span class="o">();</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">account_number</span> <span class="o">=</span> <span class="s">"9900000005"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"Johann Bernoulli"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">routing_number</span> <span class="o">=</span> <span class="s">"121000358"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="s">"checking"</span><span class="o">;</span>
-<span class="n">ba</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
-
-<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">payload</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
-<span class="n">payload</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"amount"</span><span class="o">,</span> <span class="mi">10000</span><span class="o">);</span>
-
-<span class="n">ba</span><span class="o">.</span><span class="na">credit</span><span class="o">(</span><span class="n">payload</span><span class="o">);</span>
-</pre></div>
-</div>
 </div>
 </section></section><hr>
-<section id="test-identity-verification"><span id="resources-test-identity-verification"></span><h2>Test identity verification<a class="headerlink" href="#test-identity-verification" title="Permalink to this headline">∵</a>
+<section id="test-identity-verification"><span id="resources-test-identity-verification"></span><h2>Test identity verification<a class="headerlink" href="#test-identity-verification" title="Permalink to this headline"></a>
 </h2>
 <p><span class="docutils literal"><code>Customer</code></span> resources have an <span class="docutils literal"><code>is_identity_verified</code></span> attribute.</p>
 <p>Omit address data to trigger a <span class="docutils literal"><code>false</code></span> response. Supply address data
@@ -3072,13 +2377,13 @@ to trigger a <span class="docutils literal"><code>true</code></span> response.</
 </pre></div>
 </div>
 </section><hr>
-<section id="request-logs"><span id="resources-request-logs"></span><h2>Request Logs<a class="headerlink" href="#request-logs" title="Permalink to this headline">∵</a>
+<section id="request-logs"><span id="resources-request-logs"></span><h2>Request Logs<a class="headerlink" href="#request-logs" title="Permalink to this headline"></a>
 </h2>
 <p>As you integrate and test <a class="reference internal" href="overview.html#payouts"><em>Balanced Payouts</em></a>, you may find it useful to view
 all your sanitized API request logs. They are viewable via the logs section
 in the <a class="reference external" href="https://dashboard.balancedpayments.com/">dashboard</a></p>
 </section><hr>
-<section id="the-hash-attribute"><h2>The Hash Attribute<a class="headerlink" href="#the-hash-attribute" title="Permalink to this headline">∵</a>
+<section id="the-hash-attribute"><h2>The Hash Attribute<a class="headerlink" href="#the-hash-attribute" title="Permalink to this headline"></a>
 </h2>
 <p>Every <span class="docutils literal"><code>Card</code></span> and <span class="docutils literal"><code>BankAccount</code></span> resource has an attribute than can be used
 to check if the same card is being added again.</p>
@@ -3087,7 +2392,7 @@ to check if the same card is being added again.</p>
 <p>For bank accounts, this is the <span class="docutils literal"><code>fingerprint</code></span> attribute. This is calculated using
 <span class="docutils literal"><code>account_number</code></span>, <span class="docutils literal"><code>routing_number</code></span>, <span class="docutils literal"><code>name</code></span>, and <span class="docutils literal"><code>type</code></span>.</p>
 </section><hr>
-<section id="address-verification-service"><span id="resources-address-verification-service"></span><h2>Address Verification Service<a class="headerlink" href="#address-verification-service" title="Permalink to this headline">∵</a>
+<section id="address-verification-service"><span id="resources-address-verification-service"></span><h2>Address Verification Service<a class="headerlink" href="#address-verification-service" title="Permalink to this headline"></a>
 </h2>
 <p>AVS, <strong>A</strong>ddress <strong>V</strong>erification <strong>S</strong>ervice, provides a means to
 verify that the postal_code supplied during card tokenization matches the
@@ -3097,7 +2402,7 @@ The <span class="docutils literal"><code>Card</code></span> will have a <span cl
 AVS check result.</p>
 <p><span class="docutils literal"><code>postal_code_check</code></span> will be one of: <span class="docutils literal"><code>passed</code></span>, <span class="docutils literal"><code>failed</code></span>, <span class="docutils literal"><code>unknown</code></span></p>
 </section><hr>
-<section id="card-security-code"><span id="resources-card-security-code"></span><h2>Card Security Code<a class="headerlink" href="#card-security-code" title="Permalink to this headline">∵</a>
+<section id="card-security-code"><span id="resources-card-security-code"></span><h2>Card Security Code<a class="headerlink" href="#card-security-code" title="Permalink to this headline"></a>
 </h2>
 <p>CSC, <strong>C</strong>ard <strong>S</strong>ecurity <strong>C</strong>ode, provides a means to verify that the
 <span class="docutils literal"><code>security_code</code></span> supplied during card tokenization matches the security_code
@@ -3111,8 +2416,6 @@ not process transactions with cards that fail this check.</p>
 </div>
 
     </div>
-</div>
-</div>
+</div></div>
   <script type="text/javascript" src="static/js/compiled.js"></script>
-</body>
-</html>
+</div>
