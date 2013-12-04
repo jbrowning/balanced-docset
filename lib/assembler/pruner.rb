@@ -9,7 +9,7 @@ module Assembler
       layout_docs
       prune_docs
       write_docs
-      # rename_docs
+      rename_docs
     end
 
     def target_file_paths
@@ -60,14 +60,14 @@ module Assembler
       end
     end
 
-    def sweep_old_docs
-      puts "Deleting old docs..."
-      files_to_delete = html_filenames.map { |filename|
-        File.join(PathHelper.dest.documents, filename)
-      }
-
-      files_to_delete.each do |filename|
-        FileUtils.rm filename
+    def rename_docs
+      puts "Cleaning up..."
+      target_file_paths.each do |path|
+        dir = File.dirname(path)
+        filename = File.basename(path)
+        new_file_name = filename.sub(/-gen/, "")
+        new_path = File.join(dir, new_file_name)
+        FileUtils.mv(path, new_path)
       end
     end
 
@@ -88,7 +88,7 @@ module Assembler
     def improve_permalinks(doc)
       doc.css(".headerlink").each do |node|
         node.content = ""
-        node.remove_attribute :title
+        node.remove_attribute "title"
         create_toc(node)
       end
     end
