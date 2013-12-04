@@ -75,6 +75,7 @@ module Assembler
       docs.each do |doc|
         delete_menu(doc)
         delete_unnecessary_code_examples(doc, retain_language)
+        fix_styles(doc)
         improve_permalinks(doc)
       end
     end
@@ -87,6 +88,7 @@ module Assembler
     def improve_permalinks(doc)
       doc.css(".headerlink").each do |node|
         node.content = ""
+        node.remove_attribute :title
         create_toc(node)
       end
     end
@@ -107,6 +109,11 @@ module Assembler
       entry_name = parent.content.strip
       node[:name] = "//apple_ref/cpp/#{entry_type}/#{entry_name}"
       node[:class] = "dashAnchor"
+    end
+
+    def fix_styles(doc)
+      first_section = doc.css(".toctree-wrapper section").first
+      first_section[:style] = "padding-top: 70px;"
     end
   end
 end
