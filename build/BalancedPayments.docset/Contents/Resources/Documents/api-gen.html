@@ -16,13 +16,13 @@
         <div id="context-content" class="span20 offset1">
             
   <div class="toctree-wrapper compound">
-<span id="document-introduction"></span><section id="api-reference"><h1>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline"></a>
+<span id="document-introduction"></span><section id="api-reference"><h1>API reference<a class="dashAnchor" href="#api-reference" title="Permalink to this headline" name="//apple_ref/cpp/Entry/API%20reference"></a>
 </h1>
 <div class="header3">
 The API conforms to the design principles of Representational State Transfer
 (REST). It supports only the JSON data format.</div>
 <hr>
-<section id="using-rest"><h2>Using REST<a class="headerlink" href="#using-rest" title="Permalink to this headline"></a>
+<section id="using-rest"><h2>Using REST<a class="dashAnchor" href="#using-rest" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Using%20REST"></a>
 </h2>
 <div class="compact">
 <p>Methods to retrieve data from the Balanced API require an HTTP <span class="docutils literal"><code>GET</code></span> request.</p>
@@ -31,10 +31,10 @@ The API conforms to the design principles of Representational State Transfer
 <p>Methods that destroy data in the Balanced API require an HTTP <span class="docutils literal"><code>DELETE</code></span> request.</p>
 </div>
 </section></section><hr>
-<span id="document-authentication"></span><section id="authentication"><h1>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline"></a>
+<span id="document-authentication"></span><section id="authentication"><h1>Authentication<a class="dashAnchor" href="#authentication" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Authentication"></a>
 </h1>
 <hr>
-<section id="authenticating-to-balanced"><h2>Authenticating to Balanced<a class="headerlink" href="#authenticating-to-balanced" title="Permalink to this headline"></a>
+<section id="authenticating-to-balanced"><h2>Authenticating to Balanced<a class="dashAnchor" href="#authenticating-to-balanced" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Authenticating%20to%20Balanced"></a>
 </h2>
 <p>To authenticate with Balanced, you will need the API key <span class="docutils literal"><code>secret</code></span> provided
 from the <a class="reference external" href="https://www.balancedpayments.com/dashboard">dashboard</a>. You have to use <a class="reference external" href="http://en.wikipedia.org/wiki/HTTP_Secure">http basic access
@@ -50,7 +50,7 @@ occur via <a class="reference external" href="http://en.wikipedia.org/wiki/HTTP_
 <span class="docutils literal"><code>secret</code></span>.</p>
 </div>
 </section></section><hr>
-<span id="document-errors"></span><section id="errors"><h1>Errors<a class="headerlink" href="#errors" title="Permalink to this headline"></a>
+<span id="document-errors"></span><section id="errors"><h1>Errors<a class="dashAnchor" href="#errors" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Errors"></a>
 </h1>
 <p>Standard HTTP status codes are used to communicate the success or
 failure of a request. A code in the <span class="docutils literal"><code>2xx</code></span> range indicates success, <span class="docutils literal"><code>4xx</code></span>
@@ -58,7 +58,7 @@ indicates an error that resulted from the provided information (e.g. a
 required parameter was missing, a bank account failed tokenization, etc),
 <span class="docutils literal"><code>5xx</code></span> indicates an error with Balanced's servers.</p>
 <hr>
-<section id="representation"><h2>Representation<a class="headerlink" href="#representation" title="Permalink to this headline"></a>
+<section id="representation"><h2>Representation<a class="dashAnchor" href="#representation" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Representation"></a>
 </h2>
 <dl class="dl-horizontal dl-params docutils">
 <dt><span class="docutils literal"><code>additional</code></span></dt>
@@ -88,7 +88,7 @@ required parameter was missing, a bank account failed tokenization, etc),
 <dd>
 <strong>string</strong>. HTTP response code of the exception.</dd>
 </dl></section><hr>
-<section id="status-codes"><h2>Status Codes<a class="headerlink" href="#status-codes" title="Permalink to this headline"></a>
+<section id="status-codes"><h2>Status Codes<a class="dashAnchor" href="#status-codes" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Status%20Codes"></a>
 </h2>
 <div class="code-white">
 <div class="header3 spaced-out">
@@ -105,7 +105,7 @@ HTTP Status Codes</div>
 <p class="spaced-out"><strong>500, 502, 503, 504</strong> internal server error: something went wrong on Balanced's side.</p>
 </div>
 </section></section><hr>
-<span id="document-bank_accounts"></span><section id="bank-accounts"><h1>Bank Accounts<a class="headerlink" href="#bank-accounts" title="Permalink to this headline"></a>
+<span id="document-bank_accounts"></span><section id="bank-accounts"><h1>Bank Accounts<a class="dashAnchor" href="#bank-accounts" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Bank%20Accounts"></a>
 </h1>
 <p>You'll eventually want to be able to credit bank accounts without having to
 ask your users for their information over and over again. To do this, you'll
@@ -115,7 +115,7 @@ note</div>
 <div class="alert alert-gray">
 To debit a bank account you must first <a class="reference internal" href="api.html#bank-account-verifications"><em>verify it</em></a>.</div>
 <hr>
-<section id="creating-a-new-bank-account"><h2>Creating a New Bank Account<a class="headerlink" href="#creating-a-new-bank-account" title="Permalink to this headline"></a>
+<section id="creating-a-new-bank-account"><h2>Creating a New Bank Account<a class="dashAnchor" href="#creating-a-new-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Creating%20a%20New%20Bank%20Account"></a>
 </h2>
 <p>Creates a new bank account.</p>
 <dl class="dl-horizontal dl-params docutils">
@@ -219,7 +219,7 @@ To debit a bank account you must first <a class="reference internal" href="api.h
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-bank-account"><h2>Retrieve a Bank Account<a class="headerlink" href="#retrieve-a-bank-account" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-bank-account"><h2>Retrieve a Bank Account<a class="dashAnchor" href="#retrieve-a-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Bank%20Account"></a>
 </h2>
 <p>Retrieves the details of a bank account that has previously been created.
 Supply the <span class="docutils literal"><code>uri</code></span> that was returned from your previous request, and
@@ -294,7 +294,7 @@ information is returned when creating the bank account.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-bank-accounts"><h2>List All Bank Accounts<a class="headerlink" href="#list-all-bank-accounts" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-bank-accounts"><h2>List All Bank Accounts<a class="dashAnchor" href="#list-all-bank-accounts" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Bank%20Accounts"></a>
 </h2>
 <p>Returns a list of bank accounts that you've created but haven't deleted.</p>
 <dl class="dl-horizontal dl-params docutils">
@@ -501,7 +501,7 @@ information is returned when creating the bank account.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="delete-a-bank-account"><h2>Delete a Bank Account<a class="headerlink" href="#delete-a-bank-account" title="Permalink to this headline"></a>
+<section class="method-section" id="delete-a-bank-account"><h2>Delete a Bank Account<a class="dashAnchor" href="#delete-a-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Delete%20a%20Bank%20Account"></a>
 </h2>
 <p>Permanently delete a bank account. It cannot be undone. All associated credits
 with a deleted bank account will not be affected.</p>
@@ -536,7 +536,7 @@ with a deleted bank account will not be affected.</p>
 </div>
 </div>
 </section></section><hr>
-<span id="document-bank_account_verifications"></span><section id="bank-account-verifications"><span id="id1"></span><h1>Bank Account Verifications<a class="headerlink" href="#bank-account-verifications" title="Permalink to this headline"></a>
+<span id="document-bank_account_verifications"></span><section id="bank-account-verifications"><span id="id1"></span><h1>Bank Account Verifications<a class="dashAnchor" href="#bank-account-verifications" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Bank%20Account%20Verifications"></a>
 </h1>
 <div class="alert alert-tab admonition note">
 note</div>
@@ -555,7 +555,7 @@ verification. These deposits will appear on the bank accounts statement as
 begin the process again. You can only create one verification at a time and the
 trial deposits should show in the bank account within 2 business days.</p>
 <hr>
-<section class="method-section" id="verifying-a-bank-account"><h2>Verifying a Bank Account<a class="headerlink" href="#verifying-a-bank-account" title="Permalink to this headline"></a>
+<section class="method-section" id="verifying-a-bank-account"><h2>Verifying a Bank Account<a class="dashAnchor" href="#verifying-a-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Verifying%20a%20Bank%20Account"></a>
 </h2>
 <div class="alert alert-tab admonition note">
 note</div>
@@ -611,7 +611,7 @@ you do <strong>NOT</strong> need to verify the bank account</div>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-verification-for-a-bank-account"><h2>Retrieve a Verification for a Bank Account<a class="headerlink" href="#retrieve-a-verification-for-a-bank-account" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-verification-for-a-bank-account"><h2>Retrieve a Verification for a Bank Account<a class="dashAnchor" href="#retrieve-a-verification-for-a-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Verification%20for%20a%20Bank%20Account"></a>
 </h2>
 <div class="alert alert-tab admonition note">
 note</div>
@@ -666,7 +666,7 @@ you do <strong>NOT</strong> need to verify the bank account</div>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="confirm-a-bank-account-verification"><h2>Confirm a Bank Account Verification<a class="headerlink" href="#confirm-a-bank-account-verification" title="Permalink to this headline"></a>
+<section class="method-section" id="confirm-a-bank-account-verification"><h2>Confirm a Bank Account Verification<a class="dashAnchor" href="#confirm-a-bank-account-verification" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Confirm%20a%20Bank%20Account%20Verification"></a>
 </h2>
 <div class="alert alert-tab admonition note">
 note</div>
@@ -728,7 +728,7 @@ deposit amounts are always 1 and 1.</p>
 </div>
 </div>
 </section></section><hr>
-<span id="document-cards"></span><section id="cards"><span id="id1"></span><h1>Cards<a class="headerlink" href="#cards" title="Permalink to this headline"></a>
+<span id="document-cards"></span><section id="cards"><span id="id1"></span><h1>Cards<a class="dashAnchor" href="#cards" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Cards"></a>
 </h1>
 <p>You'll eventually want to be able to charge credit/debit cards without
 having to ask your users for their information over and over again. To do
@@ -736,7 +736,7 @@ this, you'll need to create a card resource.</p>
 <p>To charge a <span class="docutils literal"><code>Card</code></span>, you must <a class="reference internal" href="api.html#debits"><em>create a debit</em></a>. Before a
 <span class="docutils literal"><code>Card</code></span> can be debited, it must first be <a class="reference external" href="#adding-a-card-to-a-customer">associated with a Customer</a></p>
 <hr>
-<section class="method-section" id="tokenize-a-card"><h2>Tokenize a Card<a class="headerlink" href="#tokenize-a-card" title="Permalink to this headline"></a>
+<section class="method-section" id="tokenize-a-card"><h2>Tokenize a Card<a class="dashAnchor" href="#tokenize-a-card" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Tokenize%20a%20Card"></a>
 </h2>
 <p>Creates a new card</p>
 <dl class="dl-horizontal dl-params docutils">
@@ -849,7 +849,7 @@ this, you'll need to create a card resource.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-card"><h2>Retrieve a Card<a class="headerlink" href="#retrieve-a-card" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-card"><h2>Retrieve a Card<a class="dashAnchor" href="#retrieve-a-card" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Card"></a>
 </h2>
 <p>Retrieves the details of a card that has previously been created.
 Supply the <span class="docutils literal"><code>uri</code></span> that was returned from your previous request, and
@@ -915,7 +915,7 @@ information is returned when creating the card.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-cards"><h2>List All Cards<a class="headerlink" href="#list-all-cards" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-cards"><h2>List All Cards<a class="dashAnchor" href="#list-all-cards" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Cards"></a>
 </h2>
 <p>Returns a list of cards that you've created.</p>
 <dl class="dl-horizontal dl-params docutils">
@@ -1166,7 +1166,7 @@ information is returned when creating the card.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="update-a-card"><h2>Update a Card<a class="headerlink" href="#update-a-card" title="Permalink to this headline"></a>
+<section class="method-section" id="update-a-card"><h2>Update a Card<a class="dashAnchor" href="#update-a-card" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Update%20a%20Card"></a>
 </h2>
 <p>Update information in a card</p>
 <div class="method-description">
@@ -1239,7 +1239,7 @@ information is returned when creating the card.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="invalidating-a-card"><h2>Invalidating a Card<a class="headerlink" href="#invalidating-a-card" title="Permalink to this headline"></a>
+<section class="method-section" id="invalidating-a-card"><h2>Invalidating a Card<a class="dashAnchor" href="#invalidating-a-card" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Invalidating%20a%20Card"></a>
 </h2>
 <p>Invalidating a card will mark the card as invalid, so it may not be charged.</p>
 <div class="method-description">
@@ -1295,11 +1295,11 @@ information is returned when creating the card.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="charging-a-card"><h2>Charging a Card<a class="headerlink" href="#charging-a-card" title="Permalink to this headline"></a>
+<section class="method-section" id="charging-a-card"><h2>Charging a Card<a class="dashAnchor" href="#charging-a-card" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Charging%20a%20Card"></a>
 </h2>
 <p>Charging a card requires that you <a class="reference internal" href="api.html#debits-create"><em>create a new debit</em></a></p>
 </section><hr>
-<section id="deleting-a-card"><h2>Deleting a Card<a class="headerlink" href="#deleting-a-card" title="Permalink to this headline"></a>
+<section id="deleting-a-card"><h2>Deleting a Card<a class="dashAnchor" href="#deleting-a-card" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Deleting%20a%20Card"></a>
 </h2>
 <p>Permanently delete a card. It cannot be undone. All debits associated
 with a deleted credit card will not be affected.</p>
@@ -1334,13 +1334,13 @@ with a deleted credit card will not be affected.</p>
 </div>
 </div>
 </section></section><hr>
-<span id="document-customers"></span><section id="customers"><span id="id1"></span><h1>Customers<a class="headerlink" href="#customers" title="Permalink to this headline"></a>
+<span id="document-customers"></span><section id="customers"><span id="id1"></span><h1>Customers<a class="dashAnchor" href="#customers" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Customers"></a>
 </h1>
 <p>Customers represent businesses or people within your marketplace. You can
 associate credit cards, debit cards, bank accounts and transactions,
 i.e. refunds, debits, credits.</p>
 <hr>
-<section class="method-section" id="creating-a-customer"><span id="id2"></span><h2>Creating a Customer<a class="headerlink" href="#creating-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="creating-a-customer"><span id="id2"></span><h2>Creating a Customer<a class="dashAnchor" href="#creating-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Creating%20a%20Customer"></a>
 </h2>
 <dl class="dl-horizontal dl-params docutils">
 <dt><span class="docutils literal"><code>name</code></span></dt>
@@ -1506,7 +1506,7 @@ business.</dd>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="adding-a-card-to-a-customer"><span id="id3"></span><h2>Adding a Card to a Customer<a class="headerlink" href="#adding-a-card-to-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="adding-a-card-to-a-customer"><span id="id3"></span><h2>Adding a Card to a Customer<a class="dashAnchor" href="#adding-a-card-to-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Adding%20a%20Card%20to%20a%20Customer"></a>
 </h2>
 <p>Adding a card to a customer activates the ability to debit an account, more
 specifically, charging a card.</p>
@@ -1659,7 +1659,7 @@ specifically, charging a card.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="adding-a-bank-account-to-a-customer"><span id="id4"></span><h2>Adding a Bank Account to a Customer<a class="headerlink" href="#adding-a-bank-account-to-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="adding-a-bank-account-to-a-customer"><span id="id4"></span><h2>Adding a Bank Account to a Customer<a class="dashAnchor" href="#adding-a-bank-account-to-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Adding%20a%20Bank%20Account%20to%20a%20Customer"></a>
 </h2>
 <p>Adding a bank account to a customer activates the ability to credit a
 customer, or in this case, initiate a next-day ACH payment.</p>
@@ -1796,7 +1796,7 @@ customer, or in this case, initiate a next-day ACH payment.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="delete-a-customer"><h2>Delete a Customer<a class="headerlink" href="#delete-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="delete-a-customer"><h2>Delete a Customer<a class="dashAnchor" href="#delete-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Delete%20a%20Customer"></a>
 </h2>
 <p>Permanently delete a customer. It cannot be undone. Only customers
 without transactions can be deleted.</p>
@@ -1826,13 +1826,13 @@ without transactions can be deleted.</p>
 </div>
 </div>
 </section></section><hr>
-<span id="document-credits"></span><section id="credits"><h1>Credits<a class="headerlink" href="#credits" title="Permalink to this headline"></a>
+<span id="document-credits"></span><section id="credits"><h1>Credits<a class="dashAnchor" href="#credits" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Credits"></a>
 </h1>
 <p>To credit a bank account, you must create a new credit resource.</p>
 <p><strong>NOTE</strong> If you're sending money to a bank account, known as issuing a credit,
 you do <strong>NOT</strong> need to verify the bank account</p>
 <hr>
-<section class="method-section" id="credit-a-new-bank-account"><h2>Credit a New Bank Account<a class="headerlink" href="#credit-a-new-bank-account" title="Permalink to this headline"></a>
+<section class="method-section" id="credit-a-new-bank-account"><h2>Credit a New Bank Account<a class="dashAnchor" href="#credit-a-new-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Credit%20a%20New%20Bank%20Account"></a>
 </h2>
 <p>To credit a new bank account, you simply pass the amount along with the bank
 account details. We do not store this bank account when you create a credit
@@ -1989,7 +1989,7 @@ Once the debit is settled it will convert to "BAL*&lt;appears_on_statement_as&gt
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="credit-an-existing-bank-account"><h2>Credit An Existing Bank Account<a class="headerlink" href="#credit-an-existing-bank-account" title="Permalink to this headline"></a>
+<section class="method-section" id="credit-an-existing-bank-account"><h2>Credit An Existing Bank Account<a class="dashAnchor" href="#credit-an-existing-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Credit%20An%20Existing%20Bank%20Account"></a>
 </h2>
 <p>To credit an existing bank account, you simply pass the amount to the
 nested credit endpoint of a bank account. The <span class="docutils literal"><code>credits_uri</code></span> is a convenient
@@ -2116,7 +2116,7 @@ Once the debit is settled it will convert to "BAL*&lt;appears_on_statement_as&gt
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-credit"><h2>Retrieve a Credit<a class="headerlink" href="#retrieve-a-credit" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-credit"><h2>Retrieve a Credit<a class="dashAnchor" href="#retrieve-a-credit" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Credit"></a>
 </h2>
 <p>Retrieves the details of a credit that you've previously created. Use the
 <span class="docutils literal"><code>uri</code></span> that was previously returned, and the corresponding credit
@@ -2194,7 +2194,7 @@ information will be returned.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-credits"><h2>List All Credits<a class="headerlink" href="#list-all-credits" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-credits"><h2>List All Credits<a class="dashAnchor" href="#list-all-credits" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Credits"></a>
 </h2>
 <p>Returns a list of credits you've previously created. The credits are returned
 in sorted order, with the most recent credits appearing first.</p>
@@ -2364,7 +2364,7 @@ in sorted order, with the most recent credits appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-credits-for-a-bank-account"><h2>List All Credits For a Bank Account<a class="headerlink" href="#list-all-credits-for-a-bank-account" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-credits-for-a-bank-account"><h2>List All Credits For a Bank Account<a class="dashAnchor" href="#list-all-credits-for-a-bank-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Credits%20For%20a%20Bank%20Account"></a>
 </h2>
 <p>Returns a list of credits you've previously created to a specific bank account.
 The <span class="docutils literal"><code>credits_uri</code></span> is a convenient uri provided so that you can simply issue
@@ -2502,7 +2502,7 @@ with the most recent credits appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="create-a-new-credit-for-a-customer"><h2>Create a New Credit For a Customer<a class="headerlink" href="#create-a-new-credit-for-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="create-a-new-credit-for-a-customer"><h2>Create a New Credit For a Customer<a class="dashAnchor" href="#create-a-new-credit-for-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Create%20a%20New%20Credit%20For%20a%20Customer"></a>
 </h2>
 <dl class="dl-horizontal dl-params docutils">
 <dt><span class="docutils literal"><code>amount</code></span></dt>
@@ -2774,7 +2774,7 @@ Once the debit is settled it will convert to "BAL*&lt;appears_on_statement_as&gt
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="listing-all-credits-for-a-customer"><h2>Listing All Credits For a Customer<a class="headerlink" href="#listing-all-credits-for-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="listing-all-credits-for-a-customer"><h2>Listing All Credits For a Customer<a class="dashAnchor" href="#listing-all-credits-for-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Listing%20All%20Credits%20For%20a%20Customer"></a>
 </h2>
 <dl class="dl-horizontal dl-params docutils">
 <dt><span class="docutils literal"><code>limit</code></span></dt>
@@ -3035,12 +3035,12 @@ Once the debit is settled it will convert to "BAL*&lt;appears_on_statement_as&gt
 </div>
 </div>
 </section></section><hr>
-<span id="document-debits"></span><section id="debits"><span id="id1"></span><h1>Debits<a class="headerlink" href="#debits" title="Permalink to this headline"></a>
+<span id="document-debits"></span><section id="debits"><span id="id1"></span><h1>Debits<a class="dashAnchor" href="#debits" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Debits"></a>
 </h1>
 <p>To debit an account, i.e. charge a card or bank account, you must create a
 new debit resource.</p>
 <hr>
-<section class="method-section" id="create-a-new-debit"><span id="debits-create"></span><h2>Create a New Debit<a class="headerlink" href="#create-a-new-debit" title="Permalink to this headline"></a>
+<section class="method-section" id="create-a-new-debit"><span id="debits-create"></span><h2>Create a New Debit<a class="dashAnchor" href="#create-a-new-debit" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Create%20a%20New%20Debit"></a>
 </h2>
 <p>Debits an account. Returns a <span class="docutils literal"><code>uri</code></span> that  can later be used to reference this
 debit.</p>
@@ -3309,7 +3309,7 @@ This field is deprecated in favor of <span class="docutils literal"><code>source
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-debit"><h2>Retrieve a Debit<a class="headerlink" href="#retrieve-a-debit" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-debit"><h2>Retrieve a Debit<a class="dashAnchor" href="#retrieve-a-debit" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Debit"></a>
 </h2>
 <p>Retrieves the details of a created debit.</p>
 <div class="method-description">
@@ -3579,7 +3579,7 @@ This field is deprecated in favor of <span class="docutils literal"><code>source
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-debits"><h2>List All Debits<a class="headerlink" href="#list-all-debits" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-debits"><h2>List All Debits<a class="dashAnchor" href="#list-all-debits" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Debits"></a>
 </h2>
 <p>Returns a list of debits you've previously created. The debits are returned
 in sorted order, with the most recent debits appearing first.</p>
@@ -4120,7 +4120,7 @@ in sorted order, with the most recent debits appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-debits-for-a-customer"><h2>List All Debits For a Customer<a class="headerlink" href="#list-all-debits-for-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-debits-for-a-customer"><h2>List All Debits For a Customer<a class="dashAnchor" href="#list-all-debits-for-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Debits%20For%20a%20Customer"></a>
 </h2>
 <p>Returns a list of debits you've previously created against a specific account.
 The <span class="docutils literal"><code>debits_uri</code></span> is a convenient uri provided so that you can simply issue
@@ -4239,7 +4239,7 @@ with the most recent debits appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="update-a-debit"><h2>Update a Debit<a class="headerlink" href="#update-a-debit" title="Permalink to this headline"></a>
+<section class="method-section" id="update-a-debit"><h2>Update a Debit<a class="dashAnchor" href="#update-a-debit" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Update%20a%20Debit"></a>
 </h2>
 <p>Updates information about a debit</p>
 <dl class="dl-horizontal dl-params docutils">
@@ -4524,7 +4524,7 @@ with the most recent debits appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="refund-a-debit"><h2>Refund a Debit<a class="headerlink" href="#refund-a-debit" title="Permalink to this headline"></a>
+<section class="method-section" id="refund-a-debit"><h2>Refund a Debit<a class="dashAnchor" href="#refund-a-debit" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Refund%20a%20Debit"></a>
 </h2>
 <p>Issues a refund for a particular debit. This creates a <a class="reference internal" href="api.html#refunds"><em>refund</em></a>.</p>
 <div class="method-description">
@@ -4757,14 +4757,14 @@ Use the <span class="docutils literal"><code>refund_uri</code></span> on a <a cl
 </div>
 </div>
 </section></section><hr>
-<span id="document-holds"></span><section id="holds"><span id="id1"></span><h1>Holds<a class="headerlink" href="#holds" title="Permalink to this headline"></a>
+<span id="document-holds"></span><section id="holds"><span id="id1"></span><h1>Holds<a class="dashAnchor" href="#holds" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Holds"></a>
 </h1>
 <p>Holds are a type of authorization that reserves (i.e. holds) a dollar amount
 on the customer's credit card, usually within 7 days.</p>
 <p>A successful hold can be captured, and as a result, creates a
 <a class="reference internal" href="api.html#debits"><em>debit</em></a>.</p>
 <hr>
-<section class="method-section" id="create-a-new-hold"><h2>Create a New Hold<a class="headerlink" href="#create-a-new-hold" title="Permalink to this headline"></a>
+<section class="method-section" id="create-a-new-hold"><h2>Create a New Hold<a class="dashAnchor" href="#create-a-new-hold" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Create%20a%20New%20Hold"></a>
 </h2>
 <p>Creates a hold against a card. Returns a <span class="docutils literal"><code>uri</code></span> that can later be used to
 create a debit, up to the full amount of the hold.</p>
@@ -5027,7 +5027,7 @@ Once the debit is settled it will convert to "BAL*&lt;appears_on_statement_as&gt
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-hold"><h2>Retrieve a Hold<a class="headerlink" href="#retrieve-a-hold" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-hold"><h2>Retrieve a Hold<a class="dashAnchor" href="#retrieve-a-hold" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Hold"></a>
 </h2>
 <p>Retrieves the details of a hold that you've previously created. Use the
 <span class="docutils literal"><code>uri</code></span> that was previously returned, and the corresponding hold
@@ -5247,7 +5247,7 @@ information will be returned.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-holds"><h2>List all Holds<a class="headerlink" href="#list-all-holds" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-holds"><h2>List all Holds<a class="dashAnchor" href="#list-all-holds" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20all%20Holds"></a>
 </h2>
 <p>Returns a list of holds you've previously created. The holds are returned
 in sorted order, with the most recent holds appearing first.</p>
@@ -5736,7 +5736,7 @@ in sorted order, with the most recent holds appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-holds-for-a-customer"><h2>List All Holds For a Customer<a class="headerlink" href="#list-all-holds-for-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-holds-for-a-customer"><h2>List All Holds For a Customer<a class="dashAnchor" href="#list-all-holds-for-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Holds%20For%20a%20Customer"></a>
 </h2>
 <p>Returns a list of holds you've previously created against a specific account.
 The holds are returned in sorted order, with the most recent holds appearing
@@ -5930,7 +5930,7 @@ first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="update-a-hold"><h2>Update a Hold<a class="headerlink" href="#update-a-hold" title="Permalink to this headline"></a>
+<section class="method-section" id="update-a-hold"><h2>Update a Hold<a class="dashAnchor" href="#update-a-hold" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Update%20a%20Hold"></a>
 </h2>
 <p>Updates information about a hold</p>
 <dl class="dl-horizontal dl-params docutils">
@@ -6173,7 +6173,7 @@ debit. Deprecated in favour of <span class="docutils literal"><code>on_behalf_of
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="capture-a-hold"><h2>Capture a Hold<a class="headerlink" href="#capture-a-hold" title="Permalink to this headline"></a>
+<section class="method-section" id="capture-a-hold"><h2>Capture a Hold<a class="dashAnchor" href="#capture-a-hold" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Capture%20a%20Hold"></a>
 </h2>
 <p>Captures a hold. This creates a <a class="reference internal" href="api.html#debits"><em>debit</em></a>.</p>
 <div class="method-description">
@@ -6229,7 +6229,7 @@ Use <span class="docutils literal"><code>hold_uri</code></span> when <a class="r
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="void-a-hold"><h2>Void a Hold<a class="headerlink" href="#void-a-hold" title="Permalink to this headline"></a>
+<section class="method-section" id="void-a-hold"><h2>Void a Hold<a class="dashAnchor" href="#void-a-hold" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Void%20a%20Hold"></a>
 </h2>
 <p>Voids a hold. This cancels the hold. After voiding, the hold can no longer
 be captured. This operation is irreversible.</p>
@@ -6471,10 +6471,10 @@ Once the debit is settled it will convert to "BAL*&lt;appears_on_statement_as&gt
 </div>
 </div>
 </section></section><hr>
-<span id="document-refunds"></span><section id="refunds"><span id="id1"></span><h1>Refunds<a class="headerlink" href="#refunds" title="Permalink to this headline"></a>
+<span id="document-refunds"></span><section id="refunds"><span id="id1"></span><h1>Refunds<a class="dashAnchor" href="#refunds" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Refunds"></a>
 </h1>
 <hr>
-<section class="method-section" id="issue-a-refund"><h2>Issue a Refund<a class="headerlink" href="#issue-a-refund" title="Permalink to this headline"></a>
+<section class="method-section" id="issue-a-refund"><h2>Issue a Refund<a class="dashAnchor" href="#issue-a-refund" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Issue%20a%20Refund"></a>
 </h2>
 <p>Issues a refund from a debit. You can either refund the full amount of the
 debit or you can issue a partial refund, where the amount is less than the
@@ -6664,7 +6664,7 @@ is <strong>required</strong>.</dd>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-refund"><h2>Retrieve a Refund<a class="headerlink" href="#retrieve-a-refund" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-refund"><h2>Retrieve a Refund<a class="dashAnchor" href="#retrieve-a-refund" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Refund"></a>
 </h2>
 <p>Retrieves the details of a refund that you've previously created. Use the
 <span class="docutils literal"><code>uri</code></span> that was previously returned, and the corresponding refund
@@ -6896,7 +6896,7 @@ information will be returned.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-refunds"><h2>List All Refunds<a class="headerlink" href="#list-all-refunds" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-refunds"><h2>List All Refunds<a class="dashAnchor" href="#list-all-refunds" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Refunds"></a>
 </h2>
 <p>Returns a list of refunds you've previously created. The refunds are returned
 in sorted order, with the most recent refunds appearing first.</p>
@@ -7359,7 +7359,7 @@ in sorted order, with the most recent refunds appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-refunds-for-a-customer"><h2>List All Refunds For a Customer<a class="headerlink" href="#list-all-refunds-for-a-customer" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-refunds-for-a-customer"><h2>List All Refunds For a Customer<a class="dashAnchor" href="#list-all-refunds-for-a-customer" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20All%20Refunds%20For%20a%20Customer"></a>
 </h2>
 <p>Returns a list of refunds you've previously created against a specific account.
 The refunds are returned in sorted order, with the most recent refunds
@@ -7565,7 +7565,7 @@ appearing first.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="update-a-refund"><h2>Update a Refund<a class="headerlink" href="#update-a-refund" title="Permalink to this headline"></a>
+<section class="method-section" id="update-a-refund"><h2>Update a Refund<a class="dashAnchor" href="#update-a-refund" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Update%20a%20Refund"></a>
 </h2>
 <p>Updates information about a refund</p>
 <dl class="dl-horizontal dl-params docutils">
@@ -7808,14 +7808,14 @@ appearing first.</p>
 </div>
 </div>
 </section></section><hr>
-<span id="document-callbacks"></span><section id="callbacks"><h1>Callbacks<a class="headerlink" href="#callbacks" title="Permalink to this headline"></a>
+<span id="document-callbacks"></span><section id="callbacks"><h1>Callbacks<a class="dashAnchor" href="#callbacks" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Callbacks"></a>
 </h1>
 <p id="id1">Callbacks are a means of registering to receive payloads of information to a specific URL of your choice.
 You may create multiple callbacks. Events will be sent to each callback URL. In the event that a 20x response
 is not received when the payload is sent to the callback URL, the callback will be retried at increasing
 intervals and will eventually expire after several tries.</p>
 <hr>
-<section id="create-a-callback"><h2>Create a Callback<a class="headerlink" href="#create-a-callback" title="Permalink to this headline"></a>
+<section id="create-a-callback"><h2>Create a Callback<a class="dashAnchor" href="#create-a-callback" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Create%20a%20Callback"></a>
 </h2>
 <dl class="dl-horizontal dl-params docutils" id="callbacks-create">
 <dt><span class="docutils literal"><code>url</code></span></dt>
@@ -7870,7 +7870,7 @@ intervals and will eventually expire after several tries.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="retrieve-a-callback"><h2>Retrieve a Callback<a class="headerlink" href="#retrieve-a-callback" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-a-callback"><h2>Retrieve a Callback<a class="dashAnchor" href="#retrieve-a-callback" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20a%20Callback"></a>
 </h2>
 <div class="code-white" id="callbacks-retrieve">
 <div class="definition">
@@ -7915,7 +7915,7 @@ intervals and will eventually expire after several tries.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-callbacks"><h2>List all Callbacks<a class="headerlink" href="#list-all-callbacks" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-callbacks"><h2>List all Callbacks<a class="dashAnchor" href="#list-all-callbacks" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20all%20Callbacks"></a>
 </h2>
 <div class="code-white" id="callbacks-list">
 <div class="definition">
@@ -7992,7 +7992,7 @@ intervals and will eventually expire after several tries.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="delete-a-callback"><h2>Delete a Callback<a class="headerlink" href="#delete-a-callback" title="Permalink to this headline"></a>
+<section class="method-section" id="delete-a-callback"><h2>Delete a Callback<a class="dashAnchor" href="#delete-a-callback" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Delete%20a%20Callback"></a>
 </h2>
 <div class="code-white" id="callbacks-delete">
 <div class="definition">
@@ -8023,7 +8023,7 @@ intervals and will eventually expire after several tries.</p>
 </div>
 </div>
 </section></section><hr>
-<span id="document-events"></span><section id="events"><h1>Events<a class="headerlink" href="#events" title="Permalink to this headline"></a>
+<span id="document-events"></span><section id="events"><h1>Events<a class="dashAnchor" href="#events" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Events"></a>
 </h1>
 <p id="id1">You can configure events to be published via a <span class="docutils literal"><code>POST</code></span> to the endpoint of your
 choice via callbacks. Once configured, events are accessible via the
@@ -8034,7 +8034,7 @@ note</div>
 Balanced may deliver more than one event with the same payload, but with a
 different event id.</div>
 <hr>
-<section id="event-types"><h2>Event types<a class="headerlink" href="#event-types" title="Permalink to this headline"></a>
+<section id="event-types"><h2>Event types<a class="dashAnchor" href="#event-types" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Event%20types"></a>
 </h2>
 <p>All transactional resources (accounts, holds, credits etc) are evented.
 The format of the type field is <span class="docutils literal"><code>resource.event_type</code></span> where <span class="docutils literal"><code>event_type</code></span> is
@@ -8116,7 +8116,7 @@ successfully sent.</dd>
 <dt><span class="docutils literal"><code>card.updated</code></span></dt>
 <dd>Occurs whenever a card is updated.</dd>
 </dl></section></section><hr>
-<section class="method-section" id="retrieve-an-event"><h2>Retrieve an Event<a class="headerlink" href="#retrieve-an-event" title="Permalink to this headline"></a>
+<section class="method-section" id="retrieve-an-event"><h2>Retrieve an Event<a class="dashAnchor" href="#retrieve-an-event" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Retrieve%20an%20Event"></a>
 </h2>
 <p id="events-show">Retrieves the details of an event that was previously created. Use the
 <span class="docutils literal"><code>uri</code></span> that was previously returned, and the corresponding event
@@ -8237,7 +8237,7 @@ information will be returned.</p>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="list-all-events"><h2>List all Events<a class="headerlink" href="#list-all-events" title="Permalink to this headline"></a>
+<section class="method-section" id="list-all-events"><h2>List all Events<a class="dashAnchor" href="#list-all-events" title="Permalink to this headline" name="//apple_ref/cpp/Entry/List%20all%20Events"></a>
 </h2>
 <dl class="dl-horizontal dl-params docutils">
 <dt><span class="docutils literal"><code>limit</code></span></dt>
@@ -8437,13 +8437,13 @@ information will be returned.</p>
 </div>
 </div>
 </section></section><hr>
-<span id="document-accounts"></span><section id="accounts-deprecated"><h1>Accounts (deprecated)<a class="headerlink" href="#accounts-deprecated" title="Permalink to this headline"></a>
+<span id="document-accounts"></span><section id="accounts-deprecated"><h1>Accounts (deprecated)<a class="dashAnchor" href="#accounts-deprecated" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Accounts%20(deprecated)"></a>
 </h1>
 <p>Accounts help facilitate managing multiple credit cards, debit cards,
 and bank accounts along with different financial transaction operations, i.e.
 refunds, debits, credits.</p>
 <hr>
-<section id="creating-an-account"><h2>Creating an Account<a class="headerlink" href="#creating-an-account" title="Permalink to this headline"></a>
+<section id="creating-an-account"><h2>Creating an Account<a class="dashAnchor" href="#creating-an-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Creating%20an%20Account"></a>
 </h2>
 <div class="alert alert-tab-red admonition note">
 note</div>
@@ -8758,7 +8758,7 @@ required.</dd>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="adding-a-card-to-an-account"><h2>Adding a Card to an Account<a class="headerlink" href="#adding-a-card-to-an-account" title="Permalink to this headline"></a>
+<section class="method-section" id="adding-a-card-to-an-account"><h2>Adding a Card to an Account<a class="dashAnchor" href="#adding-a-card-to-an-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Adding%20a%20Card%20to%20an%20Account"></a>
 </h2>
 <p>Adding a card to an account activates the ability to debit an account, more
 specifically, charging a card.</p>
@@ -8910,7 +8910,7 @@ Accounts have been deprecated. Please use <a class="reference internal" href="ap
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="adding-a-bank-account-to-an-account"><h2>Adding a Bank Account To an Account<a class="headerlink" href="#adding-a-bank-account-to-an-account" title="Permalink to this headline"></a>
+<section class="method-section" id="adding-a-bank-account-to-an-account"><h2>Adding a Bank Account To an Account<a class="dashAnchor" href="#adding-a-bank-account-to-an-account" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Adding%20a%20Bank%20Account%20To%20an%20Account"></a>
 </h2>
 <p>Adding a bank account to an account activates the ability to credit an
 account, or in this case, initiate a next-day ACH payment.</p>
@@ -9043,7 +9043,7 @@ Accounts have been deprecated. Please use <a class="reference internal" href="ap
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="underwriting-an-individual"><h2>Underwriting an Individual<a class="headerlink" href="#underwriting-an-individual" title="Permalink to this headline"></a>
+<section class="method-section" id="underwriting-an-individual"><h2>Underwriting an Individual<a class="dashAnchor" href="#underwriting-an-individual" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Underwriting%20an%20Individual"></a>
 </h2>
 <p>A person, or an individual, is a US based individual or a sole proprietor.</p>
 <p>Balanced associates a <span class="docutils literal"><code>merchant</code></span> role to signify whether or not an account
@@ -9215,7 +9215,7 @@ required.</dd>
 </div>
 </div>
 </section><hr>
-<section class="method-section" id="underwriting-a-business"><h2>Underwriting a Business<a class="headerlink" href="#underwriting-a-business" title="Permalink to this headline"></a>
+<section class="method-section" id="underwriting-a-business"><h2>Underwriting a Business<a class="dashAnchor" href="#underwriting-a-business" title="Permalink to this headline" name="//apple_ref/cpp/Entry/Underwriting%20a%20Business"></a>
 </h2>
 <p>Balanced associates a <span class="docutils literal"><code>merchant</code></span> role to signify whether or not an account
 has been underwritten.</p>

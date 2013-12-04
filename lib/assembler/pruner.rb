@@ -74,8 +74,8 @@ module Assembler
     def prune_docs(retain_language=:ruby)
       docs.each do |doc|
         delete_menu(doc)
-        delete_permalink_contents(doc)
-        delete_unnecessary_examples(doc, retain_language)
+        delete_unnecessary_code_examples(doc, retain_language)
+        improve_permalinks(doc)
       end
     end
 
@@ -84,17 +84,29 @@ module Assembler
       menu_node.remove
     end
 
-    def delete_permalink_contents(doc)
-      doc.css(".headerlink").each { |node| node.content = "" }
+    def improve_permalinks(doc)
+      doc.css(".headerlink").each do |node|
+        node.content = ""
+        create_toc(node)
+      end
     end
 
-    def delete_unnecessary_examples(doc, retain_language=:ruby)
+    def delete_unnecessary_code_examples(doc, retain_language=:ruby)
       delete_languages = [:ruby, :bash, :java, :php, :python] - [retain_language]
 
       delete_languages.each do |language|
         example_code_nodes = doc.css(".highlight-#{language}")
         example_code_nodes.each(&:remove)
       end
+    end
+
+    def create_toc(node)
+      parent = node.parent
+      return unless /^h[1-2]/i.match(parent.name)
+      entry_type = "Entry"
+      entry_name = parent.content.strip
+      node[:name] = "//apple_ref/cpp/#{entry_type}/#{entry_name}"
+      node[:class] = "dashAnchor"
     end
   end
 end
